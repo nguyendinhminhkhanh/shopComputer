@@ -1,0 +1,98 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+    <h1>Danh sách danh mục sản phẩm</h1>
+    {{#if (eq query.success "true")}}
+    <div class="alert alert-success">✅ Thêm danh mục sản phẩm thành công! <a href="category"><button class="btn btn-light"
+                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+    {{/if}}
+    {{#if (eq query.error "true")}}
+
+    <div class="alert alert-danger">❌ Có lỗi xảy ra khi thêm danh mục sản phẩm! <a href="category"><button class="btn btn-light"
+                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+
+    {{/if}}
+    <!-- Search form -->
+    <div class="col-md-6">
+        <form action="category/add" method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="category" name="category" value="" placeholder="Thêm danh mục">
+                <button class="btn btn-secondary" type="submit">Thêm danh mục</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Product table -->
+    <div class="table-responsive overflow-auto" style="max-height: 800px;">
+        <table class="table table-striped table-bordered table-hover border-dark">
+            <thead class="table-success" style="position: sticky; top: 0; z-index: 1;">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên danh mục</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each categories}}
+                <tr>
+                    <td>{{sum @index 1}}</td>
+                    <td>{{this.category}}</td>
+                    <td style="display: flex;justify-content: space-evenly;">
+                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="{{this._id}}"
+                            data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Xác Nhận Xóa (Chỉ có một modal chung) -->
+    <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteConfirmModalLabel">Xóa danh mục sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa danh mục sản phẩm này?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form name="delete-category-form" method="POST"></form>
+</main>
+
+
+<script>
+    //logic xác nhận xoá
+    document.addEventListener("DOMContentLoaded", function () {
+        let deleteCategoryId = null;
+
+        // Khi bấm nút "Xóa", lấy _id của sản phẩm
+        document.querySelectorAll('.btn-delete').forEach(button => {
+            button.addEventListener('click', function () {
+                deleteCategoryId = this.getAttribute('data-id');
+            });
+        });
+
+        // Khi bấm "Xóa" trong modal, gửi request xóa
+        document.getElementById('confirmDelete').addEventListener('click', function () {
+            if (deleteCategoryId) {
+                // Tạo form ẩn để gửi yêu cầu xóa
+                const deleteForm = document.createElement('form');
+                deleteForm.method = 'POST';
+                deleteForm.action = `/admin/category/${deleteCategoryId}?_method=DELETE`;
+
+                document.body.appendChild(deleteForm);
+                deleteForm.submit();
+            }
+        });
+    });
+</script>

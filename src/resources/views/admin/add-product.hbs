@@ -1,0 +1,68 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+    {{!-- app.use(express.json()); --}}
+   <h1>Thêm sản phẩm</h1>
+    <form method="POST" action="product/add" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Tên sản phẩm: </label>
+                            <input type="text" class="form-control" id="name" name="name" value="" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="sku">Mã sản phẩm: </label>
+                            <input type="text" class="form-control" id="sku" name="sku" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="price">Giá bán: </label>
+                            <input type="number" class="form-control" id="price" name="price" value="" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="discount">Giá giảm: </label>
+                            <input type="number" class="form-control" id="discount" name="discount" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="content">Nội dung: </label>
+                    <div class="border">
+                        <textarea class="form-control editor" id="content" name="content" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="trademark">Thương hiệu: </label>
+                    <select class="form-control" id="trademark" name="trademark" required>
+                        <option value="">--Lựa chọn--</option>
+                        {{#each trademarks}}
+                            <option value="{{this.trademark}}">{{this.trademark}}</option>
+                        {{/each}} 
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="category">Danh mục: </label>
+                    <select class="form-control" id="category" name="category" required>
+
+                        <option value="">--Lựa chọn--</option>
+                        {{#each categories}}
+                            <option value="{{this.category}}">{{this.category}}</option>
+                        {{/each}} 
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="image">Ảnh</label><br />
+                    <input type="file" class="form-control-file" id="image" name="image" required> 
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-success">Thêm sản phẩm</button>
+             <a href="/admin/product" class="btn btn-secondary">Hủy</a>
+        </div>
+    </form>
+</main>

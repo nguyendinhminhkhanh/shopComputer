@@ -1,0 +1,68 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+    <h1>Sửa sản phẩm</h1>
+    <form method="POST" action="/admin/product/update/{{product._id}}?_method=PUT" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Tên sản phẩm: </label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{product.name}}"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="sku">Mã sản phẩm: </label>
+                            <input type="text" class="form-control" id="sku" name="sku" value="{{product.sku}}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="price">Giá bán: </label>
+                            <input type="number" class="form-control" id="price" name="price" value="{{product.price}}"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="discount">Giá giảm: </label>
+                            <input type="number" class="form-control" id="discount" name="discount"
+                                value="{{product.discount}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="content">Nội dung: </label>
+                    <div class="border">
+                        <textarea class="form-control editor" id="content" name="content"
+                            rows="10">{{product.content}}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="trademark">Hãng: </label>
+                    <select class="form-control" id="trademark" name="trademark">
+                        <option value="Asus" {{#if (eq product.trademark "Asus" )}}selected{{/if}}>Asus</option>
+                        <option value="Lenovol" {{#if (eq product.trademark "Lenovol" )}}selected{{/if}}>Lenovol
+                        </option>
+                        <option value="Dell" {{#if (eq product.trademark "Dell" )}}selected{{/if}}>Dell</option>
+                        <option value="HP" {{#if (eq product.trademark "HP" )}}selected{{/if}}>HP</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Ảnh hiện tại:</label><br>
+                    <img src="{{product.image}}" alt="Hình ảnh sản phẩm" width="150">
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="image">Chọn ảnh mới:</label>
+                    <input type="file" class="form-control-file" id="image" name="image">
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-success">Cập nhật sản phẩm</button>
+            {{!-- <button type="submit" class="btn btn-secondary">Huỷ</button> --}}
+            <a href="/admin/product" class="btn btn-secondary">Hủy</a>
+        </div>
+    </form>
+</main>

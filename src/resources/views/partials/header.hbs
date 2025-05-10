@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="container header__inner">
+        <a href="/" class="logo">
+            <span class="logo__text">THANHDAT</span>PC
+        </a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">
+                        Sự kiện
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">
+                        Blog
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/auth/register" class="header__menu-link">
+                        Đăng kí
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    {{#if user}}
+                    <a href="#" class="header__menu-link btn btn--border btn--rounded">
+                        {{user.email}}
+                    </a>
+                    {{else}}
+                    <a href="/auth/login" class="header__menu-link btn btn--border btn--rounded">
+                        Đăng nhập
+                    </a>
+                    {{/if}}
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "681e1523ca1272592d8dbc9a"
+  },
+  "name": "Sách Ngữ Văn 12",
+  "nameUnsigned": "Sach Ngu Van 12",
+  "sku": "123",
+  "category": "CPU",
+  "trademark": "ASUS",
+  "content": "123",
+  "price": 123,
+  "discount": 123,
+  "image": "/uploads/1746801955913_hh11.jpg",
+  "createdAt": {
+    "$date": "2025-05-09T14:45:55.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T14:45:55.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681e160da64b74098ee18289"
+  },
+  "name": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
+  "nameUnsigned": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
+  "sku": "DLXPS13930",
+  "category": "Mainboard",
+  "trademark": "ASUS",
+  "content": "123",
+  "price": 123,
+  "discount": 123,
+  "image": "/uploads/1746802189871_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
+  "createdAt": {
+    "$date": "2025-05-09T14:49:49.880Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T14:49:49.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681e1942a2bc2b48aa3634b1"
+  },
+  "name": "MAINBOARD GIGABYTE B550M AORUS ELITE",
+  "nameUnsigned": "MAINBOARD GIGABYTE B550M AORUS ELITE",
+  "sku": "GIGAB550",
+  "category": "Mainboard",
+  "trademark": "MSI",
+  "content": "Main ",
+  "price": 2310000,
+  "discount": 2330000,
+  "image": "/uploads/1746803010986_voquanghuy.jpg",
+  "createdAt": {
+    "$date": "2025-05-09T15:03:30.998Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T15:03:30.998Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,237 @@
+{{!-- <table border="1">
+    <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Mô tả</th>
+        <th>Hình ảnh</th>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td>{{@index}}</td> <!-- Hiển thị số thứ tự -->
+        <td>{{this.title}}</td> <!-- Hiển thị tên sản phẩm -->
+        <td>{{this.detail}}</td> <!-- Hiển thị mô tả sản phẩm -->
+        <td><img src="{{this.thumbnail}}" alt=""></td> <!-- Hiển thị ảnh thu nhỏ  -->
+    </tr>
+    {{/each}}
+</table> --}}
+<section class="banner">
+    <div class="container">
+        <h1 class="banner__heading"> PC HI-END </h1>
+        <p class="banner__desc">Chất lượng uy tín tạo nên thương hiệu</p>
+        <div class="banner__buttons">
+            <a href="#" class="btn btn--border btn--rounded">Khám phá</a>
+            <a href="#" class="btn btn--primary btn--rounded has-shadow">Buy Tickets</a>
+        </div>
+    </div>
+</section>
+
+<div class="slide">
+    <div class="swiper">
+        <div class="swiper-wrapper" style="width: 1799px;">
+            <div class="swiper-slide"><img class="img-fluid" src="./image/slide3.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="./image/slide2.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="./image/slide4.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="./image/slide1.jpeg" /></div>
+        </div>
+
+        <!-- Nếu bạn muốn thêm nút chuyển trái/phải -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Nếu bạn muốn thêm các chấm nhỏ ở dưới -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title">Sản phẩm mới</h1>
+        </div>
+        <ul class="category__list">
+            {{#each products}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <h3 class="category__name">{{this.name}}</h3>
+                <div >
+                    <div class="d-flex justify-content-evenly">
+                        <button type="button" class="btn btn-success px-5 py-3">Mua</button>
+                        <button type="button" class="btn btn-danger px-5 py-3">+Giỏ</button>
+                    </div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end" style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="feature">
+    <div class="container">
+        <div class="feature__item">
+            <div class="feature__image">
+                <img src="./image/slide1.jpeg" alt="">
+            </div>
+            <div class="feature__info">
+                <h3 class="feature__title">Cấu hình PC chiến game khủng</h3>
+                <p class="feature__desc">Bạn đang tìm kiếm một chiếc PC gaming cực mạnh để chơi các tựa game AAA ở
+                    setting max, FPS cao, stream mượt mà hoặc trải nghiệm Ray Tracing, 4K/8K, dưới đây là các sản phẩm
+                    tối thiểu cần phải có</p>
+                <ul class="feature-intro__list">
+                    <li class="feature-intro__item">Card đồ hoạ</li>
+                    <li class="feature-intro__item">Màn hình</li>
+                    <li class="feature-intro__item">Main</li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--rounded">Xem thêm</a>
+            </div>
+        </div>
+        <div class="feature__item">
+            <div class="feature__image">
+                <img src="./image/slide2.jpeg" alt="">
+            </div>
+            <div class="feature__info">
+                <h3 class="feature__title">Cấu hình đồ hoạ Disigner, Video editing</h3>
+                <p class="feature__desc">Bộ PC hoặc laptop dành cho thiết kế đồ họa (Photoshop, Illustrator, 3D) và dựng
+                    video (Premiere Pro, After Effects, DaVinci Resolve) cần cấu hình mạnh để xử lý hình ảnh sắc nét,
+                    render nhanh và làm việc đa nhiệm hiệu quả.</p>
+                <ul class="feature-intro__list">
+                    <li class="feature-intro__item feature-intro__item--cricle">Màn hình DELL chuẩn màu</li>
+                    <li class="feature-intro__item feature-intro__item--cricle">Card đồ hoạ chất lượng có thể render
+                        hình ảnh video hiệu quả</li>
+                    <li class="feature-intro__item feature-intro__item--cricle">CPU bộ vi sử lý PC</li>
+                    <li class="feature-intro__item feature-intro__item--cricle">Ổ cứng có tốc tộ đọc/ghi nhanh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="feature__item">
+            <div class="feature__image">
+                <img src="./image/slide3.jpeg" alt="">
+            </div>
+            <div class="feature__info">
+                <h3 class="feature__title">Cấu hình văn phòng</h3>
+                <p class="feature__desc">Dành cho công việc văn phòng cần có cấu hình cân đối, đáp ứng tốt các tác vụ cơ
+                    bản như soạn thảo văn bản, duyệt web, email hay làm việc với bảng tính</p>
+                <ul class="feature-best__list">
+                    <li class="feature-best__item">
+                        <div style="display: flex;">
+                            <i class='bx bx-home-alt feature-best__icon'></i>
+                            <h4 class="feature-best__title">Laptop</h4>
+                        </div>
+                        <p class="feature-best__desc text-clamp text-clamp--2">Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit</p>
+                    </li>
+                    <li class="feature-best__item">
+                        <div style="display: flex;">
+                            <i class='bx bxs-car-wash feature-best__icon feature-best__icon--green'></i>
+                            <h4 class="feature-best__title">PC</h4>
+                        </div>
+                        <p class="feature-best__desc text-clamp text-clamp--2">Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit</p>
+                    </li>
+                    <li class="feature-best__item">
+                        <div style="display: flex;">
+                            <i class='bx bxl-digitalocean feature-best__icon feature-best__icon--blue'></i>
+                            <h4 class="feature-best__title">iPad</h4>
+                        </div>
+                        <p class="feature-best__desc text-clamp text-clamp--2">Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit</p>
+                    </li>
+                    <li class="feature-best__item ">
+                        <div style="display: flex;"><i
+                                class='bx bx-street-view feature-best__icon feature-best__icon--orange'></i>
+                            <h4 class="feature-best__title">Surface</h4>
+                        </div>
+                        <p class="feature-best__desc text-clamp text-clamp--2">Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partner">
+    <div class="container partner__container">
+        <h2 class="partner__title">Our business partners</h2>
+        <ul class="partner__list">
+            <li class="partner__item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_2016_logo_black.svg" alt=""
+                    class="partner__logo">
+            </li>
+            <li class="partner__item">
+                <img src="https://abtech.vn/images/feature_variant/1/OgImg-Default.png" alt="" class="partner__logo">
+            </li>
+            <li class="partner__item">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt=""
+                    class="partner__logo">
+            </li>
+            <li class="partner__item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Microsoft_logo_%281987%29.svg" alt=""
+                    class="partner__logo">
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="connect">
+    <div class="container">
+        <h2 class="connect__title">For kids who enjoy themeselves</h2>
+        <p class="connect__notice">Connect with us <span>@playground</span></p>
+        <ul class="connect__list">
+            <li class="connect__item">
+                <img src="https://cdn.dribbble.com/users/648922/screenshots/15392254/media/2c3020f499cbf5ab2a0e215ee55741ed.png"
+                    alt="" class="connect__image">
+            </li>
+            <li class="connect__item">
+                <img src="https://cdn.dribbble.com/users/648922/screenshots/11206395/media/5998f56329eda70b71fecd050032bc21.png"
+                    alt="" class="connect__image">
+            </li>
+            <li class="connect__item">
+                <img src="https://cdn.dribbble.com/users/648922/screenshots/14120767/media/4dec967491175dcf45e70ae6015a4060.png"
+                    alt="" class="connect__image">
+            </li>
+            <li class="connect__item">
+                <img src="https://cdn.dribbble.com/users/648922/screenshots/15392254/media/ab29bf966e97edefce45f4727aa13430.png"
+                    alt="" class="connect__image">
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="subscribe">
+    <div class="container subscribe__container">
+        <h2 class="subscribe__title">Subscribe to our newsletter to get future offers</h2>
+        <div class="subscribe__info">
+            <div class="subscribe__form">
+                <input type="text" class="subscribe__input" placeholder="Enter your email">
+                <button class="subscribe__button">Subscribe</button>
+            </div>
+            <div class="subscribe__social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>

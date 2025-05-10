@@ -1,0 +1,24 @@
+<div class="box-login">
+    <div class="container-login">
+        <div class="login">
+            <div class="left-side">
+                <h1>Đăng kí tài khoản</h1>
+                <p>Hãy đăng ký để có thể tìm kiếm những đồ dùng hữu ích cho mình.</p>
+
+
+            </div>
+            <div class="right-side">
+                <form method="POST" action="/auth/register">
+                    <input type="text" placeholder="Họ và tên" name="name" required />
+                    <input type="text" placeholder="Số điện thoại" name="phone" required />
+                    <input type="email" placeholder="Email" name="email" required />
+                    <input type="password" placeholder="Password" name="password" required />
+                    <button type="submit">Đăng kí</button>
+                </form>
+            </div>
+            <div>
+                <p>Bạn đã có tài khoản.<a href="/auth/login">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+</div>

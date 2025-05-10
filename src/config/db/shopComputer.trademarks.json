@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "681349a6193962d7dd5029c6"
+  },
+  "trademark": "ASUS",
+  "image": "/uploads/1746094502838_asus_rog_g14.jpg",
+  "createdAt": {
+    "$date": "2025-05-01T10:15:02.849Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-01T10:15:02.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681b8183193962d7dd502a0d"
+  },
+  "trademark": "MSI",
+  "image": "/uploads/1746633091977_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
+  "createdAt": {
+    "$date": "2025-05-07T15:51:31.979Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-07T15:51:31.979Z"
+  },
+  "__v": 0
+}]

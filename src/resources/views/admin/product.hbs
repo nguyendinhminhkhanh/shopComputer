@@ -1,0 +1,166 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+    {{#if (eq currentPath "/product")}}
+    <h1>Danh sách sản phẩm</h1>
+    {{/if}}
+    {{#if (eq currentPath "/product/search")}}
+    <h1>Danh sách tìm kiếm sản phẩm: "{{valueSearch}}"</h1>
+    {{/if}}
+    {{#if (eq query.success "true")}}
+    <div class="alert alert-success">✅ Thêm sản phẩm thành công! <a href="product"><button class="btn btn-light"
+                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+    {{/if}}
+    {{#if (eq query.error "true")}}
+
+    <div class="alert alert-danger">❌ Có lỗi xảy ra khi thêm sản phẩm! <a href="product"><button class="btn btn-light"
+                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+
+    {{/if}}
+    <!-- Search form -->
+    <div class="col-md-6">
+        <form action="/admin/product/search" method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="keyword" placeholder="Tìm kiếm sản phẩm">
+                <button class="btn btn-info" type="submit">Tìm kiếm</button>
+            </div>
+        </form>
+
+        {{#if (eq currentPath "/product")}}
+        <form action="/admin/add-product">
+            <div class="input-group mb-3">
+                <button class="btn btn-success" type="submit">Thêm sản phẩm</button>
+            </div>
+        </form>
+        {{/if}}
+
+        {{#if (eq currentPath "/product/search")}}
+        <form action="/admin/product">
+            <div class="input-group mb-3">
+                <button class="btn btn-secondary" type="submit">Quay lại danh sách sản phẩm</button>
+            </div>
+        </form>
+        {{/if}}
+
+    </div>
+    <!-- Product table -->
+    <div class="table-responsive overflow-auto" style="max-height: 800px;">
+        <table class="table table-striped table-bordered table-hover border-dark">
+            <thead class="table-success" style="position: sticky; top: 0; z-index: 1;">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã</th>
+                    <th>Tên</th>
+                    <th>Danh mục</th>
+                    <th>Thương hiệu</th>
+                    <th>Nội dung</th>
+                    <th>Giá</th>
+                    <th>Khuyễn mãi</th>
+                    <th>Hình ảnh</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>{{sum @index 1}}</td>
+                    <td><abbr style="text-decoration: none;" title="{{this.createdAt}}">{{this.sku}}</abbr></td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.category}}</td>
+                    <td>{{this.trademark}}</td>
+                    <td>{{this.content}}</td>
+                    <td>{{this.price}}</td>
+                    <td>{{this.discount}}</td>
+                    {{!-- <td>{{this.image}}</td> --}}
+                    <td><img src="{{this.image}}" alt="{{this.title}}" width="50"></td>
+                    <td style="display: flex;justify-content: space-evenly;">
+                        <form method="GET" action="/admin/product/edit-product/{{this._id}}">
+                            <button type="submit" class="btn btn-warning btn-sm">Sửa</button>
+                        </form>
+                        {{!-- <button type="button" class="btn btn-warning btn-sm btn-edit"
+                            data-id="{{this._id}}">Sửa</button> --}}
+
+                        {{!-- <a href="/admin/product/edit/{{this._id}}" class="btn btn-warning btn-sm">Sửa</a> --}}
+
+                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="{{this._id}}"
+                            data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Xác Nhận Xóa (Chỉ có một modal chung) -->
+    <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteConfirmModalLabel">Xóa sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa sản phẩm này?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Pagination -->
+    {{!-- <nav>
+        <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+        </ul>
+    </nav> --}}
+
+    <form name="delete-product-form" method="POST"></form>
+</main>
+
+
+<script>
+    //logic xác nhận xoá
+    document.addEventListener("DOMContentLoaded", function () {
+        let deleteProductId = null;
+
+        // Khi bấm nút "Xóa", lấy _id của sản phẩm
+        document.querySelectorAll('.btn-delete').forEach(button => {
+            button.addEventListener('click', function () {
+                deleteProductId = this.getAttribute('data-id');
+            });
+        });
+
+        // Khi bấm "Xóa" trong modal, gửi request xóa
+        document.getElementById('confirmDelete').addEventListener('click', function () {
+            if (deleteProductId) {
+                // Tạo form ẩn để gửi yêu cầu xóa
+                const deleteForm = document.createElement('form');
+                deleteForm.method = 'POST';
+                deleteForm.action = `/admin/product/${deleteProductId}?_method=DELETE`;
+
+                document.body.appendChild(deleteForm);
+                deleteForm.submit();
+            }
+        });
+    });
+
+    //DOM chuyển sang trang sửa
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.btn-edit').forEach(button => {
+            button.addEventListener('click', function () {
+                const productId = this.getAttribute('data-id');
+                if (productId) {
+                    window.location.href = `/admin/product/edit-product/${productId}`;
+                }
+            })
+        })
+    })
+</script>

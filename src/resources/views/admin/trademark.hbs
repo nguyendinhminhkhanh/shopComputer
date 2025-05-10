@@ -1,0 +1,102 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+    <h1>Danh sách thương hiệu sản phẩm</h1>
+    {{#if (eq query.success "true")}}
+    <div class="alert alert-success">✅ Thêm thương hiệu sản phẩm thành công! <a href="trademark"><button
+                class="btn btn-light" type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+    {{/if}}
+    {{#if (eq query.error "true")}}
+
+    <div class="alert alert-danger">❌ Có lỗi xảy ra khi thêm thương hiệu sản phẩm! <a href="trademark"><button
+                class="btn btn-light" type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+
+    {{/if}}
+    <!-- Search form -->
+    <div class="col-md-6">
+        <form action="trademark/add" method="POST" enctype="multipart/form-data">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="trademark" name="trademark" value=""
+                    placeholder="Thêm thương hiệu">
+                <input class="form-control" type="file" id="image" name="image" required>
+                <button class="btn btn-secondary" type="submit">Thêm thương hiệu</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- trademark table -->
+    <div class="table-responsive overflow-auto" style="max-height: 800px;">
+        <table class="table table-striped table-bordered table-hover border-dark">
+            <thead class="table-success" style="position: sticky; top: 0; z-index: 1;">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên danh mục</th>
+                    <th>Hình ảnh</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each trademarks}}
+                <tr>
+                    <td>{{sum @index 1}}</td>
+                    <td>{{this.trademark}}</td>
+                    <td><img src="{{this.image}}" alt="{{this.image}}" width="50"></td>
+                    <td style="display: flex;justify-content: space-evenly;">
+                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="{{this._id}}"
+                            data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Xác Nhận Xóa (Chỉ có một modal chung) -->
+    <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteConfirmModalLabel">Xóa thương hiệu sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa thương hiệu sản phẩm này?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form name="delete-trademark-form" method="POST"></form>
+</main>
+
+
+<script>
+    //logic xác nhận xoá
+    document.addEventListener("DOMContentLoaded", function () {
+        let deleteTrademarkId = null;
+
+        // Khi bấm nút "Xóa", lấy _id của sản phẩm
+        document.querySelectorAll('.btn-delete').forEach(button => {
+            button.addEventListener('click', function () {
+                deleteTrademarkId = this.getAttribute('data-id');
+            });
+        });
+
+        // Khi bấm "Xóa" trong modal, gửi request xóa
+        document.getElementById('confirmDelete').addEventListener('click', function () {
+            if (deleteTrademarkId) {
+                // Tạo form ẩn để gửi yêu cầu xóa
+                const deleteForm = document.createElement('form');
+                deleteForm.method = 'POST';
+                deleteForm.action = `/admin/trademark/${deleteTrademarkId}?_method=DELETE`;
+
+                document.body.appendChild(deleteForm);
+                deleteForm.submit();
+            }
+        });
+    });
+</script>
