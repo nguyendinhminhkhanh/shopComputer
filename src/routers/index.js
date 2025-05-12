@@ -2,10 +2,12 @@ const userRouter = require('./user');
 const productRouter = require('./product');
 const adminRouter = require('./admin');
 const authRouter = require('./auth');
+const cartRouter = require('./cart');
 // const Product = require('../app/models/products');
 function router(app) {
   // app.use('/',productRouter);
   app.use('/', productRouter);
+  app.use('/cart', cartRouter);
   app.use('/auth', authRouter);
   app.use('/admin', adminRouter);
   // app.use('/product', productRouter);

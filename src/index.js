@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express')
-// const session = require('express-session')
+const session = require('express-session')
 // const {protect} = require('./app/middleware/authMiddleware');
 const path = require('path')
 const db = require('./config/db');
@@ -18,6 +18,21 @@ app.use(fileUpload({//Dùng để upload file
   useTempFiles: true,
   tempFileDir: '/tmp/',
 }));
+
+
+
+// Cấu hình session
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
+
+
+app.use((req, res, next) => {
+  res.locals.existingUser = req.session.existingUser || null;
+  next();
+});
 db.connect();
 
 app.use(cors({
@@ -35,7 +50,7 @@ const morgan = require('morgan')
 const port = 3000
 
 
- 
+
 app.use(morgan('combined'))
 // app.use(protect);
 
@@ -47,7 +62,8 @@ const hbs = create({
   helpers: {
     sum: (a, b) => a + b,
     eq: (a, b) => a === b,
-    or: (a, b) => a || b
+    or: (a, b) => a || b,
+    multiply: (a, b) => a * b
   }
 });
 

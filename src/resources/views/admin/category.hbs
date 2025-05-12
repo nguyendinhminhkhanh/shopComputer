@@ -1,21 +1,22 @@
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
     <h1>Danh sách danh mục sản phẩm</h1>
-    {{#if (eq query.success "true")}}
-    <div class="alert alert-success">✅ Thêm danh mục sản phẩm thành công! <a href="category"><button class="btn btn-light"
-                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+    {{#if success }}
+    <div class="alert alert-success">✅ Thêm danh mục sản phẩm thành công! <a href="category"><button
+                class="btn btn-light" type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
     {{/if}}
-    {{#if (eq query.error "true")}}
+    {{#if error}}
 
-    <div class="alert alert-danger">❌ Có lỗi xảy ra khi thêm danh mục sản phẩm! <a href="category"><button class="btn btn-light"
-                type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
+    <div class="alert alert-danger">❌ Có lỗi xảy ra khi thêm danh mục sản phẩm! <a href="category"><button
+                class="btn btn-light" type="submit"><i class='bx bx-rotate-left'></i></button></a></div>
 
     {{/if}}
     <!-- Search form -->
     <div class="col-md-6">
         <form action="category/add" method="POST">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" id="category" name="category" value="" placeholder="Thêm danh mục">
-                <button class="btn btn-secondary" type="submit">Thêm danh mục</button>
+                <input type="text" class="form-control" id="category" name="category" value=""
+                    placeholder="Thêm danh mục" required>
+                <button class="btn btn-success" type="submit">Thêm danh mục</button>
             </div>
         </form>
     </div>

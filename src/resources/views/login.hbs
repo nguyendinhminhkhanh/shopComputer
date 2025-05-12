@@ -1,3 +1,41 @@
+{{!-- <style>
+    #success-message {
+        position: fixed;
+        top: 10rem;
+        right: 20px;
+        background-color: #28a745;
+        font-size: 1.5rem;
+        color: white;
+        padding: 12px 20px 12px 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        font-weight: bold;
+        transition: opacity 0.5s ease;
+    }
+</style>
+{{#if success}}
+<div id="success-message">
+    <i class='bx bx-check'></i> {{success}}
+</div>
+
+<script>
+    setTimeout(function () {
+        const successBox = document.getElementById('success-message');
+        if (successBox) {
+            successBox.style.opacity = '0';
+            setTimeout(() => successBox.style.display = 'none', 500); // đợi hiệu ứng kết thúc
+        }
+    }, 10000);
+</script>
+{{/if}} --}}
+
+{{#if message}}
+<div id="success-message">
+    <i class='bx bx-check'></i> {{message}}
+</div>
+{{/if}}
+
 <div class="box-login">
     <div class="container-login">
         <div class="login">
@@ -5,14 +43,14 @@
                 <h1>Đăng nhập</h1>
             </div>
             <div class="right-side">
-                <form method="POST" action="/">
+                <form method="POST" action="/auth/login">
                     <input type="email" placeholder="Email" name="email" required />
                     <input type="password" placeholder="Password" name="password" required />
                     <button type="submit">Đăng nhập</button>
                 </form>
             </div>
             <div>
-                <p>Bạn chưa có tài khoản.<a href="/auth/register">Đăng kí</a></p>
+                <p style="padding-top: 1rem;">Bạn chưa có tài khoản.<a href="/auth/register">Đăng kí</a></p>
             </div>
         </div>
     </div>

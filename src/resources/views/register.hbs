@@ -1,11 +1,40 @@
+<style>
+    #error-message {
+        position: fixed;
+        top: 10rem;
+        right: 20px;
+        background-color: red;
+        font-size: 1.5rem;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        font-weight: bold;
+        transition: opacity 0.5s ease;
+    }
+</style>
+{{#if error}}
+<div id="error-message">
+    <i class='bx bx-user-x' style="font-size: 2rem; padding:5px" ></i> {{error}}
+</div>
+
+<script>
+    setTimeout(function () {
+        const errorBox = document.getElementById('error-message');
+        if (errorBox) {
+            errorBox.style.opacity = '0';
+            setTimeout(() => errorBox.style.display = 'none', 500); // đợi hiệu ứng kết thúc
+        }
+    }, 10000);
+</script>
+{{/if}}
 <div class="box-login">
     <div class="container-login">
         <div class="login">
             <div class="left-side">
                 <h1>Đăng kí tài khoản</h1>
                 <p>Hãy đăng ký để có thể tìm kiếm những đồ dùng hữu ích cho mình.</p>
-
-
             </div>
             <div class="right-side">
                 <form method="POST" action="/auth/register">
@@ -17,7 +46,7 @@
                 </form>
             </div>
             <div>
-                <p>Bạn đã có tài khoản.<a href="/auth/login">Đăng nhập</a></p>
+                <p style="padding-top: 1rem;">Bạn đã có tài khoản.<a href="/auth/login">Đăng nhập</a></p>
             </div>
         </div>
     </div>
