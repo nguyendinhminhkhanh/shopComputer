@@ -1,29 +1,21 @@
 const userRouter = require('./user');
 const productRouter = require('./product');
+const categoryRouter = require('./category');
+const trademarkRouter = require('./trademark');
+const homeRouter = require('./home');
 const adminRouter = require('./admin');
 const authRouter = require('./auth');
 const cartRouter = require('./cart');
-// const Product = require('../app/models/products');
+
+
 function router(app) {
-  // app.use('/',productRouter);
-  app.use('/', productRouter);
+  app.use('/', homeRouter);
+  app.use('/admin', adminRouter);
+  app.use('/admin/product', productRouter);
+  app.use('/admin/category', categoryRouter);
+  app.use('/admin/trademark', trademarkRouter);
   app.use('/cart', cartRouter);
   app.use('/auth', authRouter);
-  app.use('/admin', adminRouter);
-  // app.use('/product', productRouter);
-  // app.use('/',newRouter)
-
-  // app.get('/', async (req, res) => {
-  //   try {
-  //     const products = await Product.find();
-  //     console.log(products); // Kiểm tra dữ liệu có lấy được không
-  //     res.render('home', { products }); // Truyền dữ liệu sang template
-  //   } catch (error) {
-  //     console.error('Lỗi lấy dữ liệu từ MongoDB:', error);
-  //     res.status(500).send('Lỗi server');
-  //   }
-  // });
-
 }
 
 module.exports = router;

@@ -6,9 +6,9 @@ const UserSchema = new mongoose.Schema({
     phone: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true }
-}, { timestamps: true, collection: 'user' });
+}, { timestamps: true, collection: 'users' });
 
 // Tạo Model từ Schema
-const User = mongoose.model('User', UserSchema, 'user');
+const User = mongoose.model('User', UserSchema, 'users');
 
 module.exports = User;

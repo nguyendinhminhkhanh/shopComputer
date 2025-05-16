@@ -4,27 +4,27 @@ const express = require('express');
 const router = express.Router();
 
 const adminController = require('../app/controllers/adminController')
+const productController = require('../app/controllers/productController')
 const upload = require('../app/middleware/uploadMiddleware'); // middleware multer
 
-router.get('/', adminController.dashboard);
-router.get('/product', adminController.product);
-router.post('/product/add', adminController.add);
-router.post('/product/search', adminController.searchProduct);
+router.get('/dashboard', adminController.dashboard);
 
-router.get('/product/edit-product/:id', adminController.edit);
-router.put('/product/update/:id', adminController.update);
-// router.post('/product/edit/:id', adminController.edit);
+// router.get('/product', productController.product);
+// router.post('/product/add', productController.add);
+// router.post('/product/search', productController.searchProduct);
+// router.get('/product/edit-product/:id', productController.edit);
+// router.put('/product/update/:id', productController.update);
+// // router.post('/product/edit/:id', adminController.edit);
+// router.delete('/product/:id', productController.delete);
+// router.get('/add-product', productController.addProduct);
 
-router.delete('/product/:id', adminController.delete);
-router.get('/add-product', adminController.addProduct);
+// router.delete('/category/:id',adminController.deleteCategory);
+// router.post('/category/add',adminController.addCategory);
+// router.get('/category',adminController.category);
 
-router.delete('/category/:id',adminController.deleteCategory);
-router.post('/category/add',adminController.addCategory);
-router.get('/category',adminController.category);
-
-router.delete('/trademark/:id',adminController.deleteTrademark);
-router.post('/trademark/add',adminController.addTrademark);
-router.get('/trademark',adminController.trademark);
+// router.delete('/trademark/:id',adminController.deleteTrademark);
+// router.post('/trademark/add',adminController.addTrademark);
+// router.get('/trademark',adminController.trademark);
 
 
 

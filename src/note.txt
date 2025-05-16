@@ -1,0 +1,14 @@
+categories cần có ảnh
+products cần thêm số lươt mua, số lượng tồn kho
+feeedbacks: product_id, user_id, startm content, created_at
+orders: id, user_id,status,note,total(tổng tiền),create_at 
+order_details: Id, order_id,product_id,price,quantity,create_at
+news: id,title,image,content,create_at (Bài viết )
+news_details: id, product_id,news_id,create_at
+banner: id,name,image,status,created_at
+banners_details:id,product_id,banner_id,created_at
+
+
+
+
+cần chỉnh lại API cho đúng fomart số nhiều

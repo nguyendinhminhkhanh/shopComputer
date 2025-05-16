@@ -25,14 +25,14 @@
         </form>
 
         {{#if (eq currentPath "/product")}}
-        <form action="/admin/add-product">
+        <form action="/admin/product/add">
             <div class="input-group mb-3">
                 <button class="btn btn-success" type="submit">Thêm sản phẩm</button>
             </div>
         </form>
         {{/if}}
 
-        {{#if (eq currentPath "/product/search")}}
+        {{#if (eq currentPath "/search")}}
         <form action="/admin/product">
             <div class="input-group mb-3">
                 <button class="btn btn-secondary" type="submit">Quay lại danh sách sản phẩm</button>
@@ -152,15 +152,4 @@
         });
     });
 
-    //DOM chuyển sang trang sửa
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.btn-edit').forEach(button => {
-            button.addEventListener('click', function () {
-                const productId = this.getAttribute('data-id');
-                if (productId) {
-                    window.location.href = `/admin/product/edit-product/${productId}`;
-                }
-            })
-        })
-    })
 </script>
