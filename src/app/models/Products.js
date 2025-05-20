@@ -14,7 +14,7 @@ const ProductsSchema = new mongoose.Schema({
     price: { type: Number },
     discount: { type: Number },
     image: { type: String },
-
+                                                                                                  
 }, { timestamps: true, collection: 'products' });
 
 // Tạo Model từ Schema

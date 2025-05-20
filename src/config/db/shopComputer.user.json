@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6828a7e0865f304c8499a28c"
+  },
+  "name": "Nguyễn Đình Mạnh Tường",
+  "phone": "0395249211",
+  "email": "admin@gmail.com",
+  "password": "$2b$10$yK2c1eLrxH3OSHa93VEJdOaUHAy1PtWGqn6VXVj01DXD3xJgroMUu",
+  "createdAt": {
+    "$date": "2025-05-17T15:14:40.959Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T15:14:40.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682958f37650a67797d942b1"
+  },
+  "name": "Nguyễn Đình Minh Khánh",
+  "phone": "0395249213",
+  "email": "mr.dinhkhanh18@gmail.com",
+  "password": "$2b$10$.qwFYCSFDVZFQO6ViV3xSOsDvFVJR5as/Xvq/FJFoiltyoNw4pAxO",
+  "createdAt": {
+    "$date": "2025-05-18T03:50:11.595Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T03:50:11.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682959177650a67797d942b4"
+  },
+  "name": "Nguyễn Đình Mạnh",
+  "phone": "0988702472",
+  "email": "manh@gmail.com",
+  "password": "$2b$10$jIsobUGJjsh0qJnKn.zz0./dGtHEqspCZRieTxWcdgfwRfinpLjL6",
+  "createdAt": {
+    "$date": "2025-05-18T03:50:47.279Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T03:50:47.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682959397650a67797d942b7"
+  },
+  "name": "Nguyễn Hữu Đạt",
+  "phone": "0794146888",
+  "email": "thanhdatpc@gmail.com",
+  "password": "$2b$10$3cmofhsVdavhznuZdlv4yeDuwJudcBl7co2TtWXg6H1OFBeXkW5H6",
+  "createdAt": {
+    "$date": "2025-05-18T03:51:21.573Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T03:51:21.573Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682959a87650a67797d942bb"
+  },
+  "name": "Nguyễn Văn A",
+  "phone": "0988770200",
+  "email": "nva@gmail.com",
+  "password": "$2b$10$.ayXpCHm4tq4rLr/FeqOVe/y0d3xCQH7Rrc8IwBurG06HL.X9SBJC",
+  "createdAt": {
+    "$date": "2025-05-18T03:53:12.074Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T03:53:12.074Z"
+  },
+  "__v": 0
+}]

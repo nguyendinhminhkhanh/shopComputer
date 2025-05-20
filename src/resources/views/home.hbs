@@ -1,19 +1,36 @@
-{{!-- <table border="1">
-    <tr>
-        <th>STT</th>
-        <th>Tên sản phẩm</th>
-        <th>Mô tả</th>
-        <th>Hình ảnh</th>
-    </tr>
-    {{#each products}}
-    <tr>
-        <td>{{@index}}</td> <!-- Hiển thị số thứ tự -->
-        <td>{{this.title}}</td> <!-- Hiển thị tên sản phẩm -->
-        <td>{{this.detail}}</td> <!-- Hiển thị mô tả sản phẩm -->
-        <td><img src="{{this.thumbnail}}" alt=""></td> <!-- Hiển thị ảnh thu nhỏ  -->
-    </tr>
-    {{/each}}
-</table> --}}
+<style>
+    #success-message {
+        position: fixed;
+        top: 10rem;
+        right: 20px;
+        background-color:
+            #28a745;
+        font-size: 1.5rem;
+        color: white;
+        padding: 12px 20px 12px 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        font-weight: bold;
+        transition: opacity 0.5s ease;
+    }
+</style>
+{{#if message}}
+<div id="success-message">
+    <i class="bx bx-check"></i>
+    {{message}} 
+</div>
+ 
+<script>
+    setTimeout(function () {
+        const successBox =
+            document.getElementById('success-message'); if (successBox) {
+                successBox.style.opacity = '0'; setTimeout(() => successBox.style.display =
+                    'none', 500);
+            }
+    }, 3000);
+</script>
+{{/if}}
 
 <section class="banner">
     <div class="container">
@@ -29,10 +46,10 @@
 <div class="slide">
     <div class="swiper">
         <div class="swiper-wrapper" style="width: 1799px;">
-            <div class="swiper-slide"><img class="img-fluid" src="./image/slide3.jpeg" /></div>
-            <div class="swiper-slide"><img class="img-fluid" src="./image/slide2.jpeg" /></div>
-            <div class="swiper-slide"><img class="img-fluid" src="./image/slide4.jpeg" /></div>
-            <div class="swiper-slide"><img class="img-fluid" src="./image/slide1.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="/image/slide3.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="/image/slide2.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="/image/slide4.jpeg" /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="/image/slide1.jpeg" /></div>
         </div>
 
         <!-- Nếu bạn muốn thêm nút chuyển trái/phải -->
@@ -56,15 +73,16 @@
                 <h3 class="category__name">{{this.name}}</h3>
                 <div>
                     <div class="d-flex justify-content-evenly">
-                        <button type="button" class="btn btn-success px-5 py-3">Mua</button>
+                        <button type="button" class="btn btn-danger px-5 py-3">Chi tiết</button>
                         {{!-- <button type="button" class="btn btn-danger px-5 py-3">+Giỏ</button> --}}
                         <form action="/cart/add" method="POST">
+                            <input type="hidden" name="_id" value="{{this._id}}">
                             <input type="hidden" name="sku" value="{{this.sku}}">
                             <input type="hidden" name="name" value="{{this.name}}">
                             <input type="hidden" name="price" value="{{this.price}}">
                             <input type="hidden" name="image" value="{{this.image}}">
                             <input type="number" name="quantity" value="1" min="1" style="display: none;">
-                            <button type="submit" class="btn btn-danger px-5 py-3">+Giỏ</button>
+                            <button type="submit" class="btn btn-success px-5 py-3">Giỏ</button>
                         </form>
                     </div>
                     <div class="pt-3">
@@ -85,7 +103,7 @@
     <div class="container">
         <div class="feature__item">
             <div class="feature__image">
-                <img src="./image/slide1.jpeg" alt="">
+                <img src="/image/slide1.jpeg" alt="">
             </div>
             <div class="feature__info">
                 <h3 class="feature__title">Cấu hình PC chiến game khủng</h3>
@@ -102,7 +120,7 @@
         </div>
         <div class="feature__item">
             <div class="feature__image">
-                <img src="./image/slide2.jpeg" alt="">
+                <img src="/image/slide2.jpeg" alt="">
             </div>
             <div class="feature__info">
                 <h3 class="feature__title">Cấu hình đồ hoạ Disigner, Video editing</h3>
@@ -120,7 +138,7 @@
         </div>
         <div class="feature__item">
             <div class="feature__image">
-                <img src="./image/slide3.jpeg" alt="">
+                <img src="/image/slide3.jpeg" alt="">
             </div>
             <div class="feature__info">
                 <h3 class="feature__title">Cấu hình văn phòng</h3>

@@ -24,11 +24,6 @@ class adminController {
 
 
 
-    //===Order=============
-    async order(req, res) {
-        res.render('admin/order', { layout: 'admin', currentPath: req.path });
-    }
-    ///,....
 
 }
 

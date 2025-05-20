@@ -30,7 +30,7 @@ router.get('/dashboard', adminController.dashboard);
 
 
 router.get('/customer', adminController.customer);
-router.get('/order', adminController.order);
+// router.get('/order', adminController.order);
 
 
 module.exports = router;

@@ -1,42 +1,21 @@
 [{
   "_id": {
-    "$oid": "681e1523ca1272592d8dbc9a"
-  },
-  "name": "Sách Ngữ Văn 12",
-  "nameUnsigned": "Sach Ngu Van 12",
-  "sku": "123",
-  "category": "CPU",
-  "trademark": "ASUS",
-  "content": "123",
-  "price": 123,
-  "discount": 123,
-  "image": "/uploads/1746801955913_hh11.jpg",
-  "createdAt": {
-    "$date": "2025-05-09T14:45:55.925Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-09T14:45:55.925Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "681e160da64b74098ee18289"
   },
   "name": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
   "nameUnsigned": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
   "sku": "DLXPS13930",
   "category": "Mainboard",
-  "trademark": "ASUS",
-  "content": "123",
-  "price": 123,
-  "discount": 123,
+  "trademark": "Asus",
+  "content": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
+  "price": 3500000,
+  "discount": 3499000,
   "image": "/uploads/1746802189871_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
   "createdAt": {
     "$date": "2025-05-09T14:49:49.880Z"
   },
   "updatedAt": {
-    "$date": "2025-05-09T14:49:49.880Z"
+    "$date": "2025-05-18T03:57:34.724Z"
   },
   "__v": 0
 },
@@ -58,6 +37,48 @@
   },
   "updatedAt": {
     "$date": "2025-05-09T15:03:30.998Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6828b49967d6c0ee705dd2a6"
+  },
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
+  "nameUnsigned": "CARD MAN HINH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
+  "sku": "1231",
+  "category": "Card (GPU)",
+  "trademark": "ASUS",
+  "content": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
+  "price": 19220000,
+  "discount": 16500000,
+  "image": "/uploads/1747498137156_DAT_7902.jpg",
+  "createdAt": {
+    "$date": "2025-05-17T16:08:57.164Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T16:08:57.164Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68295af27650a67797d942da"
+  },
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
+  "nameUnsigned": "CARD MAN HINH ASUS DUAL RTX 4090 SUPER",
+  "sku": "RTX4090SUPER",
+  "category": "Card (GPU)",
+  "trademark": "ASUS",
+  "content": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
+  "price": 29000000,
+  "discount": 28990000,
+  "image": "/uploads/1747540722395_wallpaper-4k-hinh-nen-4k-con-duong-rong-va-dai_101306477.jpg",
+  "createdAt": {
+    "$date": "2025-05-18T03:58:42.402Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T03:58:42.402Z"
   },
   "__v": 0
 }]

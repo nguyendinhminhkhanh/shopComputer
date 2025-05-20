@@ -33,7 +33,7 @@ class productController {
     const categories = await Category.find().lean();
     const trademarks = await Trademark.find().lean();
     res.render('admin/add-product', { layout: 'admin', categories, trademarks, currentPath: req.path });
-  }
+  } 
   async addHandle(req, res) {
     try {
       let imagePath = '';

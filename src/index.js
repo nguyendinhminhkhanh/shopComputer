@@ -54,9 +54,11 @@ const port = 3000
 app.use(morgan('combined'))
 // app.use(protect);
 
-
+// Cấu hình Handlebars (phiên bản <6.0.0)
 const hbs = create({
   defaultLayout: 'main',
+  layoutsDir: path.join(__dirname, 'resources/views/layouts'),
+  partialsDir: path.join(__dirname, 'resources/views/partials'),
   extname: '.hbs',
   // Tạo helper 'eq' cho Handlebars
   helpers: {

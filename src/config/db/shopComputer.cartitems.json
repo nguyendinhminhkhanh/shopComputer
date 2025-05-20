@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "6829a80942a1188509a2bf38"
+  },
+  "userId": {
+    "$oid": "682959a87650a67797d942bb"
+  },
+  "productId": "6828b49967d6c0ee705dd2a6",
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
+  "price": 19220000,
+  "quantity": 1,
+  "image": "/uploads/1747498137156_DAT_7902.jpg",
+  "createdAt": {
+    "$date": "2025-05-18T09:27:37.632Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T09:27:37.632Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6829a80d42a1188509a2bf3c"
+  },
+  "userId": {
+    "$oid": "682959a87650a67797d942bb"
+  },
+  "productId": "681e1942a2bc2b48aa3634b1",
+  "name": "MAINBOARD GIGABYTE B550M AORUS ELITE",
+  "price": 2310000,
+  "quantity": 1,
+  "image": "/uploads/1746803010986_voquanghuy.jpg",
+  "createdAt": {
+    "$date": "2025-05-18T09:27:41.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T09:27:41.672Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6829fbf81522276ab71ded8e"
+  },
+  "userId": {
+    "$oid": "682958f37650a67797d942b1"
+  },
+  "productId": "68295af27650a67797d942da",
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
+  "price": 29000000,
+  "quantity": 1,
+  "image": "/uploads/1747540722395_wallpaper-4k-hinh-nen-4k-con-duong-rong-va-dai_101306477.jpg",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-18T15:25:44.379Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T15:25:44.379Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829fbf81522276ab71ded8f"
+  },
+  "userId": {
+    "$oid": "682958f37650a67797d942b1"
+  },
+  "productId": "681e1942a2bc2b48aa3634b1",
+  "name": "MAINBOARD GIGABYTE B550M AORUS ELITE",
+  "price": 2310000,
+  "quantity": 1,
+  "image": "/uploads/1746803010986_voquanghuy.jpg",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-18T15:25:44.380Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T15:25:44.380Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829fbfe1522276ab71ded95"
+  },
+  "userId": {
+    "$oid": "6828a7e0865f304c8499a28c"
+  },
+  "productId": "68295af27650a67797d942da",
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
+  "price": 29000000,
+  "quantity": 3,
+  "image": "/uploads/1747540722395_wallpaper-4k-hinh-nen-4k-con-duong-rong-va-dai_101306477.jpg",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829fbfe1522276ab71ded96"
+  },
+  "userId": {
+    "$oid": "6828a7e0865f304c8499a28c"
+  },
+  "productId": "6828b49967d6c0ee705dd2a6",
+  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
+  "price": 19220000,
+  "quantity": 2,
+  "image": "/uploads/1747498137156_DAT_7902.jpg",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829fbfe1522276ab71ded97"
+  },
+  "userId": {
+    "$oid": "6828a7e0865f304c8499a28c"
+  },
+  "productId": "681e160da64b74098ee18289",
+  "name": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
+  "price": 3500000,
+  "quantity": 1,
+  "image": "/uploads/1746802189871_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-18T15:25:50.690Z"
+  }
+}]
