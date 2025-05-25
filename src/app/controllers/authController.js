@@ -2,6 +2,8 @@ const User = require("../models/User");
 const CartItem = require("../models/CartItems");
 const cartController = require("./cartController");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const { token } = require("morgan");
 class authController {
   //[GET] /auth/login
   login(req, res, next) {
@@ -26,10 +28,10 @@ class authController {
           oldInput: req.body,
         });
       }
-
       const isMatch = await bcrypt.compare(password, existingUser.password);
       if (isMatch) {
         console.log("Đăng nhập thành công");
+
         req.session.existingUser = existingUser;
 
         //Thêm giỏ hàng từ DB vào session (an toàn khi rỗng)
@@ -37,8 +39,20 @@ class authController {
           existingUser._id
         );
         req.session.cart = Array.isArray(restoredCart) ? restoredCart : [];
-
-        return res.redirect("/");
+        console.log(req.session);
+        res.cookie("token", token, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production",
+          maxAge: 3600000, // 1 giờ
+          sameSite: "Strict",
+        });
+        res.redirect("/");
+        // res.status(200).json({
+        //     message: "Đăng nhập thành công",
+        //     data: {
+        //         token
+        //     }
+        // })
       } else {
         return res.status(400).render("login", {
           error: "Thông tin đăng nhập không chính xác",

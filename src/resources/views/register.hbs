@@ -40,6 +40,7 @@
                 <form method="POST" action="/auth/register">
                     <input type="text" placeholder="Họ và tên" name="name" required />
                     <input type="text" placeholder="Số điện thoại" name="phone" required />
+                    <input type="text" name="role" required hidden value="customer" />
                     <input type="email" placeholder="Email" name="email" required />
                     <input type="password" placeholder="Password" name="password" required />
                     <button type="submit">Đăng kí</button>
