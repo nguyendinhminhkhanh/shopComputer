@@ -5,7 +5,8 @@ const protect = (req, res, next) => {
     let token = req.cookies.token || req.headers.authorization?.replace('Bearer ', '');
 
     if (!token) {
-        return res.status(401).json({ message: 'Không có token, truy cập bị từ chối' });
+        // return res.status(401).json({ message: 'Không có token, truy cập bị từ chối' });
+        return res.render('home',{message: "Phiên đăng nhập đã hết hạn, vui lòng đăng nhập để thực hiện !"});
     }
 
     try {

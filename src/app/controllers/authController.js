@@ -32,6 +32,12 @@ class authController {
       if (isMatch) {
         console.log("Đăng nhập thành công");
 
+        const token = jwt.sign(
+          { userId: existingUser._id, email: existingUser.email }, // Payload
+          process.env.JWT_SECRET, // Secret key
+          { expiresIn: "1h" } // Thời gian hết hạn
+        );
+
         req.session.existingUser = existingUser;
 
         //Thêm giỏ hàng từ DB vào session (an toàn khi rỗng)
@@ -39,13 +45,16 @@ class authController {
           existingUser._id
         );
         req.session.cart = Array.isArray(restoredCart) ? restoredCart : [];
+
         console.log(req.session);
+
         res.cookie("token", token, {
           httpOnly: true,
           secure: process.env.NODE_ENV === "production",
           maxAge: 3600000, // 1 giờ
           sameSite: "Strict",
         });
+
         res.redirect("/");
         // res.status(200).json({
         //     message: "Đăng nhập thành công",
@@ -53,6 +62,7 @@ class authController {
         //         token
         //     }
         // })
+        
       } else {
         return res.status(400).render("login", {
           error: "Thông tin đăng nhập không chính xác",
