@@ -28,4 +28,4 @@ const protect = (req, res, next) => {
     }
 };
 
-module.exports = protect; // Export trực tiếp hàm, không cần object {}
+module.exports = protect; 

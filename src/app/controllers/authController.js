@@ -31,7 +31,7 @@ class authController {
       const isMatch = await bcrypt.compare(password, existingUser.password);
       if (isMatch) {
         console.log("Đăng nhập thành công");
-
+        // return res.status(200).json({result: existingUser.role})
         const token = jwt.sign(
           { userId: existingUser._id, email: existingUser.email }, // Payload
           process.env.JWT_SECRET, // Secret key
@@ -39,7 +39,7 @@ class authController {
         );
 
         req.session.existingUser = existingUser;
-
+        
         //Thêm giỏ hàng từ DB vào session (an toàn khi rỗng)
         const restoredCart = await cartController.restoreCartFromDB(
           existingUser._id

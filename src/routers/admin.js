@@ -5,9 +5,8 @@ const router = express.Router();
 
 const adminController = require('../app/controllers/adminController')
 const productController = require('../app/controllers/productController')
-const upload = require('../app/middleware/uploadMiddleware'); // middleware multer
 
-router.get('/dashboard', adminController.dashboard);
+router.get('/dashboard',adminController.dashboard);
 
 // router.get('/product', productController.product);
 // router.post('/product/add', productController.add);

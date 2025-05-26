@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express')
 const session = require('express-session')
-// const {protect} = require('./app/middleware/authMiddleware');
 const path = require('path')
 const db = require('./config/db');
 const router = require('./routers');
@@ -52,7 +51,6 @@ const port = 3000
 
 
 app.use(morgan('combined'))
-// app.use(protect);
 
 // Cấu hình Handlebars (phiên bản <6.0.0)
 const hbs = create({

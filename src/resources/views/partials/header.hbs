@@ -34,6 +34,9 @@
                         {{existingUser.name}}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdownMenu2">
+                        {{#if (eq existingUser.role 'admin')}}
+                        <li><a class="dropdown-item px-5 py-3 fs-2" type="button" href="/admin/dashboard">Truy cập trang Admin</a></li>
+                        {{/if}}
                         <li><a class="dropdown-item px-5 py-3 fs-2" type="button" href="/">Thông tin tài khoản</a></li>
                         <li><a class="dropdown-item px-5 py-3 fs-2" type="button" href="/">Đơn hàng của bạn</a></li>
                         <li>

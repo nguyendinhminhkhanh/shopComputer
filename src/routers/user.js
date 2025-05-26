@@ -1,6 +1,6 @@
 // const express = require('express');
 // const router = express.Router();
-// const { protect } = require('../app/middleware/authMiddleware');
+
 // const userController = require('../app/controllers/userController');
 
 // router.get('/formlogin', userController.formlogin);
