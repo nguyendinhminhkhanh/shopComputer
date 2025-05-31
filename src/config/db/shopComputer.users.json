@@ -1,27 +1,11 @@
 [{
   "_id": {
-    "$oid": "6832ed80e43f5584086de0cf"
-  },
-  "name": "Nguyễn Đình",
-  "phone": "0988702475",
-  "email": "quantrimang021@gmail.com",
-  "role": "customer",
-  "password": "$2b$10$OksKU0jYzt80n9Zt7RL6pOntmRMkVPMXFDcfjS4/YMyh6s9W4se0u",
-  "createdAt": {
-    "$date": "2025-05-25T10:14:24.328Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-25T10:14:24.328Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "6828a7e0865f304c8499a28c"
   },
   "name": "Nguyễn Đình Mạnh Tường",
   "phone": "0395249211",
   "email": "admin@gmail.com",
+  "role": "admin",
   "password": "$2b$10$yK2c1eLrxH3OSHa93VEJdOaUHAy1PtWGqn6VXVj01DXD3xJgroMUu",
   "createdAt": {
     "$date": "2025-05-17T15:14:40.959Z"
@@ -38,6 +22,7 @@
   "name": "Nguyễn Đình Minh Khánh",
   "phone": "0395249213",
   "email": "mr.dinhkhanh18@gmail.com",
+  "role": "customer",
   "password": "$2b$10$.qwFYCSFDVZFQO6ViV3xSOsDvFVJR5as/Xvq/FJFoiltyoNw4pAxO",
   "createdAt": {
     "$date": "2025-05-18T03:50:11.595Z"
@@ -61,7 +46,8 @@
   "updatedAt": {
     "$date": "2025-05-18T03:50:47.279Z"
   },
-  "__v": 0
+  "__v": 0,
+  "role": "admin"
 },
 {
   "_id": {
@@ -77,38 +63,40 @@
   "updatedAt": {
     "$date": "2025-05-18T03:51:21.573Z"
   },
-  "__v": 0
+  "__v": 0,
+  "role": "customer"
 },
 {
   "_id": {
-    "$oid": "682959a87650a67797d942bb"
+    "$oid": "683738c54eb79701ba606e0c"
   },
-  "name": "Nguyễn Văn A",
-  "phone": "0988770200",
-  "email": "nva@gmail.com",
-  "password": "$2b$10$.ayXpCHm4tq4rLr/FeqOVe/y0d3xCQH7Rrc8IwBurG06HL.X9SBJC",
-  "createdAt": {
-    "$date": "2025-05-18T03:53:12.074Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-18T03:53:12.074Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68330c45cd37a69de2a8c4b8"
-  },
-  "name": "Nguyễn Văn B",
-  "phone": "0395249311",
-  "email": "test@gmail.com",
+  "name": "Nguyễn Đình Minh Khánh",
+  "phone": "0988770233",
+  "email": "deadpool142368721@gmail.com",
   "role": "customer",
-  "password": "$2b$10$0PMwjWX4gC6bYidr6cwjVOXtWoKUh8fs4STjGwAhHZAYHX7eV7Ddq",
+  "password": "$2b$10$IYEFAlCvDzXReSjUhuEikeWS/mRI5R2T5y0bf7LE6adiJztPbOBNa",
   "createdAt": {
-    "$date": "2025-05-25T12:25:41.575Z"
+    "$date": "2025-05-28T16:24:37.945Z"
   },
   "updatedAt": {
-    "$date": "2025-05-25T12:25:41.575Z"
+    "$date": "2025-05-28T16:24:37.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683739464eb79701ba606e13"
+  },
+  "name": "Vở A4 200 trang, 260 trang kẻ ngang KLong",
+  "phone": "0988770222",
+  "email": "admin2@gmail.com",
+  "role": "customer",
+  "password": "$2b$10$uwfq5LYr4IMtjFRfQ6COeemsZvERpR6lipl8aAyctq7aNdLyId73u",
+  "createdAt": {
+    "$date": "2025-05-28T16:26:46.729Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T16:26:46.729Z"
   },
   "__v": 0
 }]
