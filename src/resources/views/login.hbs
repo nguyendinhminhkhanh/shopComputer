@@ -1,9 +1,9 @@
-{{!-- <style>
+<style>
     #success-message {
         position: fixed;
         top: 10rem;
         right: 20px;
-        background-color: #28a745;
+        
         font-size: 1.5rem;
         color: white;
         padding: 12px 20px 12px 10px;
@@ -15,8 +15,22 @@
     }
 </style>
 {{#if success}}
-<div id="success-message">
+<div id="success-message" style="background-color: #28a745;">
     <i class='bx bx-check'></i> {{success}}
+</div>
+<script>
+    setTimeout(function () {
+        const successBox = document.getElementById('success-message');
+        if (successBox) {
+            successBox.style.opacity = '0';
+            setTimeout(() => successBox.style.display = 'none', 500); // đợi hiệu ứng kết thúc
+        }
+    }, 10000);
+</script>
+{{/if}}
+{{#if error}}
+<div id="success-message" style="background-color: red;">
+    <i class='bx bx-check'></i> {{error}}
 </div>
 
 <script>
@@ -28,12 +42,6 @@
         }
     }, 10000);
 </script>
-{{/if}} --}}
-
-{{#if message}}
-<div id="success-message">
-    <i class='bx bx-check'></i> {{message}}
-</div>
 {{/if}}
 
 <div class="box-login">

@@ -1,6 +1,27 @@
+<style>
+    .logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #1a2b5f;
+        transition: 0.4s;
+    }
+
+    .logo__text {
+        color: #ffc87a;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+        transition: 0.35s;
+    }
+</style>
 <nav class="col-md-3 col-lg-2 d-md-block sidebar">
     <div class="position-sticky">
         <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link logo" href="/"><i class="fa-solid fa-house"></i><span class="logo__text">
+                        THANHDAT</span>PC</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link {{#if (eq currentPath '/dashboard')}}active{{/if}}" href="/admin/dashboard"><i
                         class="fa-solid fa-bars-progress"></i> Bảng điều khiển</a>
@@ -8,7 +29,8 @@
 
             <!-- Quản lý sản phẩm -->
             <li class="nav-item">
-                <a class="nav-link {{#if (eq currentPath '/product')}}active{{/if}}" href="/admin/product"><i class="fa-brands fa-product-hunt"></i> Quản lý sản phẩm</a>
+                <a class="nav-link {{#if (eq currentPath '/product')}}active{{/if}}" href="/admin/product"><i
+                        class="fa-brands fa-product-hunt"></i> Quản lý sản phẩm</a>
                 {{!-- <a
                     class="nav-link {{#if (or (eq currentPath '/product') (eq currentPath '/add-product'))}}active{{/if}} "
                     data-bs-toggle="collapse" href="#productMenu" role="button" aria-expanded="false"
@@ -41,7 +63,10 @@
                     hàng</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/dashboard"><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuẩt</a>
+                <form action="/auth/logout" method="POST">
+                    <button class="dropdown-item nav-link" type="submit"><i class="fa-solid fa-right-from-bracket"></i>
+                        Đăng xuất</button>
+                </form>
             </li>
 
             <p>{{currentPath}}</p>
