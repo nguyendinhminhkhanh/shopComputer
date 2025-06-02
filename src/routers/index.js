@@ -18,6 +18,7 @@ function router(app) {
   app.use("/admin/order", checkRole, orderRouter);
   app.use("/cart", cartRouter);
   app.use("/auth", authRouter);
+  app.use("/product", productRouter);
 }
 
 module.exports = router;

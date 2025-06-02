@@ -1,0 +1,718 @@
+<div class="section" style="padding-top: 3rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="image-detail">
+                <div id="product-main-img" class="slick-initialized slick-slider">
+                    <div class="slick-list draggable">
+                        <div class="slick-track" style="opacity: 1; width: 293px;">
+                            <div class="product-preview slick-slide slick-current slick-active"
+                                style="border: 5px solid rgb(11, 16, 21); width: 293px; position: relative; left: 0px; top: 0px; opacity: 1; overflow: hidden;"
+                                data-slick-index="0" aria-hidden="false" tabindex="0">
+                                <img src="{{product.image}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product details -->
+            <div class="col-md-5">
+                <div class="product-details">
+                    <h2 class="product-name">{{product.name}}</h2>
+                    <div>
+                        <br>
+                        <h4>Giá Gốc:
+                            <del class="product-old-price">{{product.price}}
+                            </del>
+                        </h4>
+                        <h4>Giá Khuyến Mại
+                            : <span class="product-price" style="margin-bottom: 0px;">{{product.discount}}</span>
+                        </h4>
+                    </div>
+                    <br>
+                    <div class="product-details">
+                        <div role="tab" id="headingThree2">
+                            <h4>
+                                Thông Số Sản Phẩm
+                            </h4>
+                        </div>
+                        <div id="module">
+                            <ul class="product-detail" id="collapseExample" style="line-height: 30px"
+                                aria-expanded="false">
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>Main<strong>:</strong> </span>
+                                    <span>Đồng bộ Dell</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>CPU<strong>:</strong> </span>
+                                    <span>Intel Core i5 6500 3.20GHz, 6M, 4 Cores 4 Threads</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>RAM<strong>:</strong> </span>
+                                    <span>8G DDR4</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>SSD<strong>:</strong> </span>
+                                    <span>256G Nvme tốc độ cao</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>HDD<strong>:</strong> </span>
+                                    <span>500G Sata 3</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>POWER<strong>:</strong> </span>
+                                    <span>Nguồn đồng bộ ổn định</span>
+                                </li>
+                                <li style="text-transform: uppercase;">
+                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
+                                    <span>MONITOR<strong>:</strong> </span>
+                                    <span>Màn hình 20 inch Led</span>
+                                </li>
+                            </ul>
+                            <a role="button" id="collapsed" class="collapsed" data-toggle="collapse"
+                                href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            </a>
+                        </div>
+
+                        <p style="margin-top: 15px"><strong>Bảo Hành:</strong> <span class="product-price">24 tháng
+                            </span>
+                        </p>
+                        <p><strong>Gọi Đặt Mua: </strong> <span style="color: red"> Phone</span>
+                        </p>
+                    </div>
+
+                    <div class="product-details d-flex justify-content-evenly" style="padding: 2rem 15px">
+                        <div>
+                            <button type="button" class="btn btn-danger btn-sm btn-order"> <span
+                                    style="font-size: 16px;">THÊM VÀO GIỎ</span></button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success btn-sm btn-order" data-bs-toggle="modal"
+                                data-bs-target="#orderConfirmModal"> ĐẶT MUA NGAY</button>
+                        </div>
+                    </div>
+                    <!-- Modal Xác Nhận order -->
+                    <div class="modal fade" id="orderConfirmModal" tabindex="-1"
+                        aria-labelledby="orderConfirmModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="orderConfirmModalLabel">Thông tin nhận hàng</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form action="/cart/order" method="POST">
+                                    <div class="modal-body right-side">
+
+                                        <label for="">Họ và tên</label>
+                                        <input type="text" placeholder="Họ và tên" name="name" required />
+                                        <label for="">Số điện thoại</label>
+                                        <input type="text" placeholder="Số điện thoại" name="phone" required />
+                                        <label for="">Email</label>
+                                        <input type="email" placeholder="Email" name="email" required />
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text" placeholder="Địa chỉ" name="address" required />
+                                        <label for="">Ghi chú</label>
+                                        <textarea class="form-control editor" id="content" name="note"
+                                            rows="10"></textarea>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Hủy</button>
+                                        <button type="submit" class="btn btn-success" id="confirmOrder">Đặt
+                                            hàng</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="promotion">
+                        <h4>ƯU ĐÃI THÊM</h4>
+                        <div class="content">
+                            <ul style="line-height:29px; font-size: 16px; padding: 5px 10px;">
+                                <li>🎁 Cam kết giá tốt nhất, có báo giá tốt hơn liên hệ <span>ZALO:
+                                        <a href="https://zalo.me/0961838911">ThanhdatPC</a></span>
+                                </li>
+                                <li>🎁 Tư vấn kỹ thuật về sản phẩm liên hệ <span>ZALO:
+                                        <a href="https://zalo.me/0794146888">ThanhdatPC</a></span></li>
+                                <li>🎁 Giảm thêm cho THANHDAT-MEMBER</li>
+                                <li>🎁 Miễn phí vệ sinh - phần mềm trọn đời sản phẩm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Product details -->
+            <div class="col-md-3">
+                <div class="product-support" style="border: 1px solid #cccccc; padding: 10px">
+                    <h4 style="text-align: center;">YÊN TÂM MUA SẮM</h4>
+                    <ul style="line-height: 40px">
+                        <li><img src="https://thanhdatpc.vn/template/client/img/icon-flag.png"> Chất lượng sản phẩm đảm
+                            bảo
+                        </li>
+                        <li><img src="https://thanhdatpc.vn/template/client/img/icon-medal-2.png"> Giá thành tốt nhất
+                            thị
+                            trường
+                        </li>
+                        <li><img src="https://thanhdatpc.vn/template/client/img/icon-loop.png"> Chế độ bảo hành vượt
+                            trội
+                        </li>
+                        <li><img src="https://thanhdatpc.vn/template/client/img/icon-shield.png"> Hỗ trợ cài đặt phần
+                            mềm
+                        </li>
+                        <li><img src="https://thanhdatpc.vn/template/client/img/icon-bag.png"> Miễn phí vận chuyển nội
+                            thành TP Hà Nội - TP HCM
+                        </li>
+                    </ul>
+                    <div class="line" style="border: 1px solid #b6b4b4"></div>
+                    <br>
+                    <h4 style="text-align: center;">TƯ VẤN - ĐẶT HÀNG</h4>
+                    <ul style="line-height: 40px">
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0961838911" target="_blank"> Kinh Doanh HN - 096.183.8911</a>
+                        </li>
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0971333692" target="_blank"> Bảo Hành HN - 097.133.3692</a>
+                        </li>
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0794146888" target="_blank"> Kinh Doanh HN - 079.414.6888</a>
+                        </li>
+                    </ul>
+                    <div class="line" style="border: 1px solid #b6b4b4"></div>
+                    <br>
+                    <h4 style="text-align: center;">MIỄN PHÍ GIAO HÀNG</h4>
+                    <ul style="line-height: 40px">
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0961838911" target="_blank"> Kinh Doanh HN - 096.183.8911</a>
+                        </li>
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0971333692" target="_blank"> Bảo Hành HN - 097.133.3692</a>
+                        </li>
+                        <li>
+                            <img src="https://thanhdatpc.vn/template/client/img/icon-zalo.png"><a
+                                href="https://zalo.me/0794146888" target="_blank"> Kinh Doanh HN - 079.414.6888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Product tab -->
+            <div class="col-md-12">
+                <div id="product-tab">
+                    <!-- product tab nav -->
+                    <ul class="tab-nav">
+                        <li class="active"><a data-toggle="tab" href="#tab1">Mô Tả Sản Phẩm</a></li>
+                        <li><a data-toggle="tab" href="#tab2">Bình Luận(0
+                                )</a></li>
+
+                    </ul>
+                    <!-- /product tab nav -->
+
+                    <!-- product tab content -->
+                    <div class="tab-content">
+                        <!-- tab1  -->
+                        <div id="tab1" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="conten" style="width: 100%">
+                                        <ul>
+                                            <li>Tất cả các sản phẩm xuất ra đều được&nbsp;<strong>Công Ty TNHH Thành Đạt
+                                                    PC</strong>&nbsp;cài&nbsp;đặt sẵn hệ&nbsp;điều hành và một số phần
+                                                mềm văn phòng cơ bản</li>
+                                            <li>Hỗ trợ lắp đặt và giao hàng thu tiền tại nhà với những khách hàng ở khu
+                                                vực Hà Nội</li>
+                                            <li>Quý khách muốn thay&nbsp;đổi hoặc nâng cấp cấu hình, mua màn hình khác
+                                                vui lòng liên hệ trực tiếp&nbsp;với phòng kinh doanh qua số điện thoại
+                                                Hotline:&nbsp;<strong>079.414.6888</strong>&nbsp;để được&nbsp;tư vấn và
+                                                có giá tốt nhất</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-product">
+                                        <h3 id="title">Thông Số Kỹ Thuật</h3>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr class="table table-bordered">
+                                                    <th style="text-align: center">STT</th>
+                                                    <th style="text-align: center">Thông Số Sản Phẩm</th>
+                                                    <th width="15%">Bảo Hành</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">1</td>
+                                                    <th>MAIN đồng bộ Dell</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">2</td>
+                                                    <th>CPU Intel Core i5 6500 3.20GHz, 6M, 4 Cores 4 Threads</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">3</td>
+                                                    <th>RAM 8GB DDR4</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">4</td>
+                                                    <th>SSD 256G Nvme tốc độ cao</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">5</td>
+                                                    <th>HDD 500G Sata 3</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">6</td>
+                                                    <th>POWER Nguồn đồng bộ ổn định</th>
+                                                    <td style="text-align: center">24
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align: center">7</td>
+                                                    <th>MONITOR Màn hình 20 inch Led</th>
+                                                    <td style="text-align: center">12
+                                                        Tháng
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 sidebar-page-container">
+                                            <div class="sidebar">
+                                                <div class="sidebar-widget sidebar-post">
+                                                    <div class="widget-title">
+                                                        <h3>Tin Mới Nhất</h3>
+                                                    </div>
+                                                    <div class="post-inner">
+                                                        <div class="carousel-inner-data">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/22/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/csgo.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN GAME</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/22/detail">
+                                                                                Counter-Strike 2 chính thức trình làng,
+                                                                                mở ra thời đại mới cho thể loại FPS
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/21/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/CSGO-Operation-10-Details.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN GAME</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/21/detail">
+                                                                                Valve gỡ ban cho những game thủ CS2 tội
+                                                                                nghiệp, bị cấm chơi oan uổng do cài
+                                                                                driver AMD
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/20/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/snapdragonxplus1.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/20/detail">
+                                                                                Rò rỉ vi xử lý Snapdragon X Plus giá rẻ,
+                                                                                các chiếc laptop ARM sẽ có mức giá tốt
+                                                                                hơn
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/19/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/IntelCoreUltra200V.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/19/detail">
+                                                                                Intel ra mắt CPU Core Ultra 200V Lunar
+                                                                                Lake: Hỗ trợ Ray-Tracing phần cứng và
+                                                                                tiết kiệm năng lượng hơn
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/17/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/HJP1T.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/17/detail">
+                                                                                Acer Swift Go AI SFG14-73-71ZX: Laptop
+                                                                                mạnh mẽ, đa năng cho mọi nhu cầu
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/16/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/acer.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/16/detail">
+                                                                                Chọn laptop Acer RAM 16 GB để thoải mái
+                                                                                chơi game, chạy đa nhiệm không lo máy
+                                                                                lag
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/15/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/ASROCK.png"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/15/detail">
+                                                                                Ông lớn ASRock cho ra mắt bo mạch chủ
+                                                                                X870E &amp; X870 cao cấp với VRM mạnh mẽ
+                                                                                và khả năng kết nối cho CPU “AM5”
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/14/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/20240722-1-728x364.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/14/detail">
+                                                                                ASRock Giới thiệu đến người dùng 2 mẫu
+                                                                                màn chơi game 180Hz mới PG27FFT1A và
+                                                                                PG27FFT1B
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/13/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/cach-xem-camera-giao-thong-ha-noi-09.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/13/detail">
+                                                                                Hướng dẫn truy cập và xem Camera giao
+                                                                                thông ở Hà Nội cho anh em di chuyển
+                                                                                không bị tắc đường
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="post">
+                                                                        <div class="post-date">
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/12/detail">
+                                                                                <img src="https://thanhdatpc.vn/images/news/289-ti--u-------ph-----1-.jpg"
+                                                                                    style="width: 100%; height: auto">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="file-box">
+                                                                            <i class="far fa-folder-open"></i>
+                                                                            <p>TIN CÔNG NGHỆ</p>
+                                                                        </div>
+                                                                        <h5>
+                                                                            <a
+                                                                                href="https://thanhdatpc.vn/news/12/detail">
+                                                                                So sánh Ram máy tính: Team Vulcan Z 8GB
+                                                                                3200Mhz vs SSTC 8GB 3200Mhz
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /tab1  -->
+
+                        <!-- tab2  -->
+                        <div id="tab2" class="tab-pane fade in">
+                            <div class="row">
+                                <!-- Rating -->
+                                <div class="col-md-3">
+                                    <div id="rating">
+                                        <div class="rating-avg">
+                                            <span>4.5</span>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <ul class="rating">
+                                            <li>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="rating-progress">
+                                                    <div style="width: 80%;"></div>
+                                                </div>
+                                                <span class="sum">3</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="rating-progress">
+                                                    <div style="width: 60%;"></div>
+                                                </div>
+                                                <span class="sum">2</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="rating-progress">
+                                                    <div></div>
+                                                </div>
+                                                <span class="sum">0</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="rating-progress">
+                                                    <div></div>
+                                                </div>
+                                                <span class="sum">0</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="rating-progress">
+                                                    <div></div>
+                                                </div>
+                                                <span class="sum">0</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /Rating -->
+
+                                <!-- Reviews -->
+                                <div class="col-md-6">
+                                    <div id="reviews">
+                                        <p style="color: red; text-align: center">Không có bình luận nào!</p>
+                                    </div>
+                                </div>
+                                <!-- /Reviews -->
+
+                                <!-- Review Form -->
+                                <div class="col-md-3">
+                                    <div id="review-form">
+                                        <form class="review-form" method="post"
+                                            action="https://thanhdatpc.vn/new_comment">
+                                            <input type="hidden" name="_token"
+                                                value="U5maJ9dEpm7GmgJOeOZY98Pb1V2bGpe7Rg1kTkba"> <input class="input"
+                                                name="full_name" type="text" placeholder="Họ Tên *" required="">
+                                            <input class="input" name="email" type="email" placeholder="Email *"
+                                                required="">
+                                            <input class="input" name="phone_number" type="text"
+                                                placeholder="Số điện thoại *" required="">
+                                            <textarea class="input" name="content" placeholder="Nội Dung Bình Luận"
+                                                required=""></textarea>
+                                            <input type="hidden" name="product_id" value="337">
+                                            <button class="primary-btn">Bình Luận</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /Review Form -->
+                            </div>
+                        </div>
+                        <!-- /tab2  -->
+                    </div>
+                    <!-- /product tab content  -->
+                </div>
+            </div>
+            <!-- /product tab -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+    <div class="modal fade" id="cartDetail" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                            class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                    <div id="mess_success">
+                        <h4 style="text-align: center">Thêm vào giỏ hàng thành công</h4>
+                        <div class="icon" style="text-align: center;">
+                            <img src="https://thanhdatpc.vn/template/client/img/icon_success.png" alt=""
+                                style="width: 30%; height: auto">
+                        </div>
+                    </div>
+                    <div id="mess_error" hidden="">
+                        <h4 style="text-align: center">Thêm vào giỏ hàng không thành công</h4>
+                        <div class="icon" style="text-align: center;">
+                            <img src="https://thanhdatpc.vn/template/client/img/canh_bao.png" alt=""
+                                style="width: 30%; height: auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
