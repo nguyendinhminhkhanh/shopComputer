@@ -63,11 +63,35 @@ class productController {
         imagePath = "/uploads/" + fileName;
       }
 
+      console.log("Full request body:", JSON.stringify(req.body, null, 2));
+      // Xử lý parameters từ form
+      const parameters = [];
+
+      // Tìm tất cả các key parameters trong body
+      for (const key in req.body) {
+        if (key.startsWith("parameters[")) {
+          const match = key.match(/parameters\[(\d+)\]\[(\w+)\]/);
+          if (match) {
+            const index = match[1];
+            const field = match[2];
+            const value = req.body[key];
+
+            // Tìm hoặc tạo parameter object
+            if (!parameters[index]) {
+              parameters[index] = {};
+            }
+            parameters[index][field] = value;
+          }
+        }
+      }
+
       // Sau đó bạn tạo product
       const product = new Product({
         ...req.body,
         nameUnsigned: removeVietnameseTones(req.body.name),
         image: imagePath,
+        parameters:
+          parameters.length > 0 ? parameters : undefined,
       });
 
       await product.save();
