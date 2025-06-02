@@ -1,6 +1,6 @@
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
     {{!-- app.use(express.json()); --}}
-   <h1>Thêm sản phẩm</h1>
+    <h1>Thêm sản phẩm</h1>
     <form method="POST" action="/admin/product/add" enctype="multipart/form-data">
         <div class="row">
             <div class="col-md-8">
@@ -26,6 +26,23 @@
                         </div>
                     </div>
                 </div>
+                    {{!-- --}}
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label>Thông số kỹ thuật: </label>
+                            <div id="new_input">
+                                <div class="input-group ">
+                                    <input type="text" name="parameters[0][name]" placeholder="Tên thông số"
+                                        style="width: 200px">
+                                    <input type="text" name="parameters[0][value]" placeholder="Giá trị"
+                                        class="form-control">
+                                    <span class="input-group-text btn btn-outline-success" id="rowAdder"
+                                        style="cursor: pointer">Thêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{!-- --}}
                 <div class="form-group mt-3">
                     <label for="content">Nội dung: </label>
                     <div class="border">
@@ -39,8 +56,8 @@
                     <select class="form-control" id="trademark" name="trademark" required>
                         <option value="">--Lựa chọn--</option>
                         {{#each trademarks}}
-                            <option value="{{this.trademark}}">{{this.trademark}}</option>
-                        {{/each}} 
+                        <option value="{{this.trademark}}">{{this.trademark}}</option>
+                        {{/each}}
                     </select>
                 </div>
                 <div class="form-group mt-3">
@@ -49,20 +66,40 @@
 
                         <option value="">--Lựa chọn--</option>
                         {{#each categories}}
-                            <option value="{{this.category}}">{{this.category}}</option>
-                        {{/each}} 
+                        <option value="{{this.category}}">{{this.category}}</option>
+                        {{/each}}
                     </select>
                 </div>
 
                 <div class="form-group mt-3">
                     <label for="image">Ảnh</label><br />
-                    <input type="file" class="form-control-file" id="image" name="image" required> 
+                    <input type="file" class="form-control-file" id="image" name="image" required>
                 </div>
             </div>
         </div>
         <div class="form-group mt-3">
             <button type="submit" class="btn btn-success">Thêm sản phẩm</button>
-             <a href="/admin/product" class="btn btn-secondary">Hủy</a>
+            <a href="/admin/product" class="btn btn-secondary">Hủy</a>
         </div>
     </form>
 </main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        let counter = 1; // Bắt đầu từ 1 vì đã có 1 phần tử
+        
+        $("#rowAdder").click(function() {
+            const newRow = `
+            <div class="input-group mt-2">
+                <input type="text" name="parameters[${counter}][name]" placeholder="Tên thông số" style="width: 200px">
+                <input type="text" name="parameters[${counter}][value]" placeholder="Giá trị" class="form-control">
+                <span class="input-group-text btn btn-outline-danger" style="cursor: pointer" 
+                      onclick="$(this).parent().remove()">xóa</span>
+            </div>
+            `;
+            
+            $("#new_input").append(newRow);
+            counter++;
+        });
+    });
+</script>
