@@ -39,41 +39,12 @@
                         <div id="module">
                             <ul class="product-detail" id="collapseExample" style="line-height: 30px"
                                 aria-expanded="false">
+                                {{#each product.parameters }}
                                 <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>Main<strong>:</strong> </span>
-                                    <span>Đồng bộ Dell</span>
+                                    <span>{{this.name}}<strong>:</strong> </span>
+                                    <span>{{this.value}}</span>
                                 </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>CPU<strong>:</strong> </span>
-                                    <span>Intel Core i5 6500 3.20GHz, 6M, 4 Cores 4 Threads</span>
-                                </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>RAM<strong>:</strong> </span>
-                                    <span>8G DDR4</span>
-                                </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>SSD<strong>:</strong> </span>
-                                    <span>256G Nvme tốc độ cao</span>
-                                </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>HDD<strong>:</strong> </span>
-                                    <span>500G Sata 3</span>
-                                </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>POWER<strong>:</strong> </span>
-                                    <span>Nguồn đồng bộ ổn định</span>
-                                </li>
-                                <li style="text-transform: uppercase;">
-                                    <img src="https://thanhdatpc.vn/template/client/img/icon-check.png" width="15px;">
-                                    <span>MONITOR<strong>:</strong> </span>
-                                    <span>Màn hình 20 inch Led</span>
-                                </li>
+                                {{/each}}
                             </ul>
                             <a role="button" id="collapsed" class="collapsed" data-toggle="collapse"
                                 href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
