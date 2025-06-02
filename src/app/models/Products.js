@@ -1,8 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 // Tạo Schema
 // title: { type: String },
-const ProductsSchema = new mongoose.Schema({
+const ProductsSchema = new mongoose.Schema(
+  {
     // detail: { type: String },
     // thumbnail: { type: String }
     name: { type: String, required: true },
@@ -14,10 +15,17 @@ const ProductsSchema = new mongoose.Schema({
     price: { type: Number },
     discount: { type: Number },
     image: { type: String },
-                                                                                                  
-}, { timestamps: true, collection: 'products' });
+    parameters: [
+      {
+        name: { type: String, required: true },
+        value: { type: String, required: true },
+      },
+    ],
+  },
+  { timestamps: true, collection: "products" }
+);
 
 // Tạo Model từ Schema
-const Product = mongoose.model('Product', ProductsSchema, 'products');
+const Product = mongoose.model("Product", ProductsSchema, "products");
 
 module.exports = Product;
