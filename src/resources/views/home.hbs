@@ -64,19 +64,17 @@
 <section class="category">
     <div class="container">
         <div class="">
-            <h1 class="title">Sản phẩm mới</h1>
+            <h1 class="title" style="font-weight: 600;">Sản phẩm mới</h1>
         </div>
         <ul class="category__list">
             {{#each products}}
             <li class="category__item">
                 <img src="{{this.image}}" alt="" class="category__image">
-                <h3 class="category__name">{{this.name}}</h3>
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
                 <div>
-                    <div class="d-flex justify-content-evenly">
-                        <form action="/product/detail/{{this._id}}" method="GET">
-                            <button type="submit" class="btn btn-danger px-5 py-3">Chi tiết</button>
-                        </form>
-                        {{!-- <button type="button" class="btn btn-danger px-5 py-3">+Giỏ</button> --}}
+                    {{!-- <div class="d-flex justify-content-evenly">
                         <form action="/cart/add" method="POST">
                             <input type="hidden" name="_id" value="{{this._id}}">
                             <input type="hidden" name="sku" value="{{this.sku}}">
@@ -86,7 +84,7 @@
                             <input type="number" name="quantity" value="1" min="1" style="display: none;">
                             <button type="submit" class="btn btn-success px-5 py-3">Giỏ</button>
                         </form>
-                    </div>
+                    </div> --}}
                     <div class="pt-3">
                         <del class="d-flex justify-content-end"
                             style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
