@@ -1,84 +1,288 @@
 [{
   "_id": {
-    "$oid": "681e160da64b74098ee18289"
+    "$oid": "68405caee618776e9b8477c8"
   },
-  "name": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
-  "nameUnsigned": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
-  "sku": "DLXPS13930",
-  "category": "Mainboard",
-  "trademark": "Asus",
-  "content": "MAINBOARD ASUS TUF GAMING X670E-PLUS WIFI",
-  "price": 3500000,
-  "discount": 3499000,
-  "image": "/uploads/1746802189871_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
+  "name": "BỘ VI XỬ LÝ INTEL CORE I9-14900K (UP TO 5.8GHZ, 24 NHÂN 32 LUỒNG, 36MB CACHE, 125W) - SOCKET INTEL LGA 1700/RAPTOR LAKE",
+  "nameUnsigned": "BO VI XU LY INTEL CORE I9-14900K (UP TO 5.8GHZ, 24 NHAN 32 LUONG, 36MB CACHE, 125W) - SOCKET INTEL LGA 1700/RAPTOR LAKE",
+  "sku": "CPU_I9-14900K",
+  "category": "CPU",
+  "trademark": "INTEL",
+  "content": "CPU là một trong những thành phần quan trọng nhất của máy tính, đóng vai trò quyết định đến hiệu năng và khả năng xử lý của máy tính. Và vào cuối năm 2021, Intel đã chính thức ra mắt thế hệ CPU thứ 14 của mình, được gọi là Raptor Lake. Thế hệ CPU này được xây dựng trên quy trình 10nm Enhanced SuperFin mới của Intel và mang đến nhiều cải tiến về hiệu năng, tính năng và khả năng mở rộng so với thế hệ tiền nhiệm, Alder Lake. Một trong những sản phẩm nổi bật nhất của thế hệ Raptor Lake là chip Core i9-14900k. Đây là phiên bản cao cấp nhất của dòng Core i9, mang đến hiệu năng vượt trội cho các tác vụ đòi hỏi cao như chơi game, chỉnh sửa video và render đồ họa.\r\n\r\nHiệu năng vượt trội của CPU 14th\r\nThế hệ CPU 14th được trang bị kiến trúc hybrid mới, kết hợp giữa các nhân hiệu suất cao (P-core) và các nhân hiệu suất tiết kiệm điện (E-core). Kiến trúc này giúp tối ưu hóa hiệu năng cho các tác vụ khác nhau. Chip Core i9-14900k được trang bị 8 nhân P-core và 16 nhân E-core, tổng cộng là 24 nhân và 32 luồng. Xung nhịp cơ bản của chip là 3,2 GHz, có thể ép xung lên tối đa 5,5 GHz.\r\n\r\nTrong các bài kiểm tra hiệu năng, chip Core i9-14900k đã vượt trội hơn so với chip Core i9-13900K của thế hệ trước. Cụ thể, trong bài kiểm tra Cinebench R23, chip Core i9-14900k đạt điểm đa nhân là 31.289, cao hơn 30% so với điểm 23.239 của chip Core i9-13900K. Trong bài kiểm tra chơi game, chip Core i9-14900k cũng cho thấy hiệu năng vượt trội. Cụ thể, trong bài kiểm tra 3DMark Time Spy, chip Core i9-14900k đạt điểm 18.246, cao hơn 15% so với điểm 15.732 của chip Core i9-13900K.\r\n\r\nThông số kỹ thuật của i9 14900k:\r\nThông số\tGiá trị\r\nSố nhân\t24\r\nSố luồng\t32\r\nXung nhịp cơ bản\t3,2 GHz\r\nXung nhịp tối đa\t5,5 GHz\r\nBộ nhớ đệm\t30 MB\r\nQuy trình sản xuất\t10nm Enhanced SuperFin\r\nTDP\t125W\r\nThế hệ intel CPU 14th: Đột phá trong công nghệ\r\nThế hệ CPU 14th của Intel là một bước đột phá lớn trong công nghệ. Với việc sử dụng quy trình sản xuất 10nm Enhanced SuperFin mới, Intel đã có thể cải tiến hiệu năng và tính năng của CPU một cách đáng kể. Ngoài ra, kiến trúc hybrid mới cũng là một điểm nhấn quan trọng của thế hệ này, giúp tối ưu hóa hiệu năng cho các tác vụ khác nhau.\r\n\r\nVới việc sử dụng công nghệ 10nm Enhanced SuperFin, CPU 14th có thể hoạt động với xung nhịp cao hơn, tiêu thụ ít năng lượng hơn và đem lại hiệu năng tốt hơn so với thế hệ trước. Điều này đặc biệt quan trọng đối với các game thủ và những người làm việc với các tác vụ đòi hỏi cao về hiệu năng.\r\n\r\nTính năng mới của i9 14900k: Sự lựa chọn hoàn hảo cho game thủ\r\nVới hiệu năng vượt trội và tính năng mới, chip Core i9-14900k là sự lựa chọn hoàn hảo cho các game thủ. Với việc sử dụng kiến trúc hybrid, CPU này có thể tối ưu hóa hiệu năng cho các tác vụ đòi hỏi cao như chơi game, chỉnh sửa video và render đồ họa.\r\n\r\nNgoài ra, i9 14900k cũng được trang bị công nghệ Intel Turbo Boost Max 3.0, giúp tăng hiệu năng tự động khi cần thiết. Điều này đặc biệt quan trọng trong các tác vụ đòi hỏi cao về xử lý đồ họa và video.\r\n\r\nCPU 14th: Sự kết hợp hoàn hảo giữa hiệu năng và tính năng\r\nThế hệ CPU 14th của Intel không chỉ mang lại hiệu năng vượt trội mà còn được trang bị nhiều tính năng mới và tiện ích. Một trong số đó là tính năng Intel Deep Learning Boost (DL Boost), giúp tăng tốc xử lý các tác vụ liên quan đến trí tuệ nhân tạo và học máy.\r\n\r\nNgoài ra, CPU 14th cũng được trang bị tính năng Intel Optane Memory, giúp tăng tốc độ truy xuất dữ liệu và cải thiện hiệu năng của hệ thống. Tính năng này đặc biệt quan trọng trong việc xử lý các tác vụ đòi hỏi cao về đồ họa và video.\r\n\r\n14900k: CPU đáng mong đợi nhất trong năm nay\r\nVới sự kết hợp hoàn hảo giữa hiệu năng và tính năng mới, i9 14900k là CPU đáng mong đợi nhất trong năm nay. Đặc biệt, với việc sử dụng công nghệ 10nm Enhanced SuperFin mới, chip này có thể đem lại hiệu năng tốt hơn và tiêu thụ ít năng lượng hơn so với các thế hệ trước đó.\r\n\r\nNgoài ra, tính năng Intel Turbo Boost Max 3.0 và Intel Deep Learning Boost cũng là những điểm nhấn quan trọng, giúp tăng tốc độ xử lý và cải thiện hiệu năng cho các tác vụ đòi hỏi cao.\r\n\r\nĐánh giá chi tiết về i9 14900k: Tại sao nó lại được đánh giá cao?\r\nĐể hiểu rõ hơn về hiệu năng và tính năng của i9 14900k, chúng ta hãy cùng đánh giá chi tiết về chip này.\r\n\r\nHiệu năng vượt trội\r\nVới việc sử dụng kiến trúc hybrid mới, i9 14900k có thể tối ưu hóa hiệu năng cho các tác vụ khác nhau. Điều này đặc biệt quan trọng trong việc xử lý các tác vụ đòi hỏi cao về đồ họa và video. Ngoài ra, tính năng Intel Turbo Boost Max 3.0 cũng giúp tăng tốc độ xử lý khi cần thiết, đem lại hiệu năng vượt trội cho CPU này.\r\n\r\nTính năng mới và tiện ích\r\ni9 14900k được trang bị nhiều tính năng mới và tiện ích, giúp tăng tốc độ xử lý và cải thiện hiệu năng của hệ thống. Một trong số đó là tính năng Intel Optane Memory, giúp tăng tốc độ truy xuất dữ liệu và cải thiện hiệu năng cho các tác vụ đòi hỏi cao về đồ họa và video.\r\n\r\nNgoài ra, tính năng Intel Deep Learning Boost cũng là một điểm nhấn quan trọng, giúp tăng tốc xử lý các tác vụ liên quan đến trí tuệ nhân tạo và học máy.\r\n\r\nTiêu thụ ít năng lượng hơn\r\nVới việc sử dụng công nghệ 10nm Enhanced SuperFin mới, i9 14900k có thể tiêu thụ ít năng lượng hơn so với các thế hệ trước đó. Điều này đặc biệt quan trọng đối với các game thủ và những người làm việc với các tác vụ đòi hỏi cao về hiệu năng.\r\n\r\nCông nghệ mới của CPU 14th: Đưa hiệu năng lên tầm cao mới\r\nThế hệ CPU 14th của Intel không chỉ mang lại hiệu năng vượt trội mà còn đưa hiệu năng lên tầm cao mới. Với việc sử dụng công nghệ 10nm Enhanced SuperFin mới, chip này có thể hoạt động với xung nhịp cao hơn, tiêu thụ ít năng lượng hơn và đem lại hiệu năng tốt hơn so với thế hệ trước.\r\n\r\nNgoài ra, kiến trúc hybrid mới cũng giúp tối ưu hóa hiệu năng cho các tác vụ khác nhau, đem lại trải nghiệm mượt mà và hiệu quả hơn cho người dùng.\r\n\r\ni9 14900k: Sự lựa chọn hàng đầu cho các máy tính đồ họa và render\r\nVới hiệu năng vượt trội và tính năng mới, i9 14900k là sự lựa chọn hàng đầu cho các máy tính đồ họa và render. Đặc biệt, với việc sử dụng công nghệ 10nm Enhanced SuperFin mới, chip này có thể đem lại hiệu năng tốt hơn và tiêu thụ ít năng lượng hơn so với các thế hệ trước đó.\r\n\r\nNgoài ra, tính năng Intel Turbo Boost Max 3.0 và Intel Deep Learning Boost cũng là những điểm nhấn quan trọng, giúp tăng tốc độ xử lý và cải thiện hiệu năng cho các tác vụ đòi hỏi cao về đồ họa và video.\r\n\r\nCPU 14th: Sự cải tiến đáng kể trong hiệu năng và tính năng so với thế hệ trước\r\nVới sự kết hợp hoàn hảo giữa hiệu năng và tính năng mới, CPU 14th của Intel đã có những cải tiến đáng kể so với thế hệ trước. Đặc biệt, việc sử dụng công nghệ 10nm Enhanced SuperFin mới đã đem lại hiệu năng tốt hơn và tiêu thụ ít năng lượng hơn cho chip này.\r\n\r\nNgoài ra, tính năng Intel Optane Memory và Intel Deep Learning Boost cũng là những điểm nhấn quan trọng, giúp tăng tốc độ xử lý và cải thiện hiệu năng cho các tác vụ đòi hỏi cao về đồ họa và video.\r\n\r\nKết luận\r\nVới hiệu năng vượt trội và tính năng mới, i9 14900k là CPU đáng mong đợi nhất trong năm nay. Đây là sự kết hợp hoàn hảo giữa hiệu năng và tính năng, đem lại trải nghiệm mượt mà và hiệu quả hơn cho người dùng. Thế hệ CPU 14th của Intel đã đưa hiệu năng lên tầm cao mới và là sự cải tiến đáng kể so với thế hệ trước. Vì vậy, i9 14900k được đánh giá cao và là sự lựa chọn hàng đầu cho các máy tính đồ họa và render.",
+  "price": 14999000,
+  "discount": 13999000,
+  "image": "/uploads/1749048494537_i9_14900K.jpg",
+  "parameters": [
+    {
+      "name": "Socket",
+      "value": "LGA1700",
+      "_id": {
+        "$oid": "68405caee618776e9b8477c9"
+      }
+    },
+    {
+      "name": "Số nhân",
+      "value": "24 nhân (8 P-Core | 16 E-Core)",
+      "_id": {
+        "$oid": "68405caee618776e9b8477ca"
+      }
+    },
+    {
+      "name": "Số luồng",
+      "value": "32 Luồng",
+      "_id": {
+        "$oid": "68405caee618776e9b8477cb"
+      }
+    },
+    {
+      "name": "Bộ nhớ đệm",
+      "value": "36MB",
+      "_id": {
+        "$oid": "68405caee618776e9b8477cc"
+      }
+    },
+    {
+      "name": "Base Clock (P-Core)",
+      "value": "3.2 GHz",
+      "_id": {
+        "$oid": "68405caee618776e9b8477cd"
+      }
+    },
+    {
+      "name": "Boost Clock (P-Core)",
+      "value": "6.0 GHz",
+      "_id": {
+        "$oid": "68405caee618776e9b8477ce"
+      }
+    }
+  ],
   "createdAt": {
-    "$date": "2025-05-09T14:49:49.880Z"
+    "$date": "2025-06-04T14:48:14.557Z"
   },
   "updatedAt": {
-    "$date": "2025-05-18T03:57:34.724Z"
+    "$date": "2025-06-04T14:48:14.557Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "681e1942a2bc2b48aa3634b1"
+    "$oid": "6840699be618776e9b8478ec"
   },
-  "name": "MAINBOARD GIGABYTE B550M AORUS ELITE",
-  "nameUnsigned": "MAINBOARD GIGABYTE B550M AORUS ELITE",
-  "sku": "GIGAB550",
-  "category": "Mainboard",
-  "trademark": "MSI",
-  "content": "Main ",
-  "price": 2310000,
-  "discount": 2330000,
-  "image": "/uploads/1746803010986_voquanghuy.jpg",
+  "name": "BỘ VI XỬ LÝ INTEL CORE I9 13900K (36MB CACHE, UP TO 5.80 GHZ, 24C32T, SOCKET 1700)",
+  "nameUnsigned": "BO VI XU LY INTEL CORE I9 13900K (36MB CACHE, UP TO 5.80 GHZ, 24C32T, SOCKET 1700)",
+  "sku": "CPU_I9-13900K",
+  "category": "CPU",
+  "trademark": "INTEL",
+  "content": "CPU Intel Core i9 13900K là một bộ vi xử lý (CPU) dành cho máy tính để bàn được Intel phát hành vào tháng 10 năm 2023. Đây là bộ vi xử lý đầu tiên thuộc thế hệ thứ 13 của Intel, được gọi là Raptor Lake. Với những cải tiến vượt trội về hiệu năng và tính năng mới, Intel Core i9 13900K hứa hẹn sẽ mang lại trải nghiệm tuyệt vời cho người dùng.\r\n\r\nHiệu năng vượt trội của CPU Intel Core i9 13900K\r\nTheo các bài thử nghiệm của các trang công nghệ hàng đầu, Intel Core i9 13900K có thể mang lại hiệu năng cao hơn khoảng 15% so với Intel Core i9 12900k trong các tác vụ chơi game, chỉnh sửa video và tạo nội dung. Điều này cho thấy sự cải tiến đáng kể về hiệu năng của Intel Core i9 13900K so với thế hệ trước đó.\r\n\r\nNgoài ra, Intel Core i9 13900K cũng có khả năng xử lý đa nhiệm tốt hơn, giúp người dùng có thể làm việc với nhiều ứng dụng cùng một lúc mà không gặp trở ngại. Điều này rất hữu ích cho các nhà thiết kế đồ họa hay những người làm việc với các phần mềm chỉnh sửa video chuyên nghiệp.\r\n\r\nNgoài ra, Intel Core i9 13900K còn được tích hợp công nghệ Intel Thread Director mới nhất, giúp tối ưu hóa hiệu năng của các nhân và luồng trong bộ vi xử lý. Điều này giúp cho CPU hoạt động hiệu quả hơn và mang lại hiệu năng cao hơn trong các tác vụ đa luồng.\r\n\r\nĐánh giá hiệu năng của Intel Core i9 13900K\r\nĐể đánh giá hiệu năng của Intel Core i9 13900K, chúng ta sẽ xem xét các bài thử nghiệm của các trang công nghệ hàng đầu như Tom's Hardware, AnandTech và PCMag. Dưới đây là kết quả đánh giá hiệu năng của Intel Core i9 13900K trong các tác vụ chơi game, chỉnh sửa video và tạo nội dung:\r\n\r\nTrong các tác vụ chơi game, Intel Core i9 13900K có hiệu năng cao hơn khoảng 15% so với Intel Core i9 12900K. Điều này cho thấy sự cải tiến đáng kể của bộ vi xử lý này trong việc xử lý các trò chơi đòi hỏi nhiều tài nguyên.\r\nTrong các tác vụ chỉnh sửa video, Intel Core i9 13900K có thời gian render nhanh hơn khoảng 10% so với Intel Core i9 12900K. Điều này giúp cho người dùng có thể hoàn thành công việc chỉnh sửa video một cách nhanh chóng và hiệu quả hơn.\r\nTrong các tác vụ tạo nội dung, Intel Core i9 13900K có hiệu năng cao hơn khoảng 20% so với Intel Core i9 12900K. Điều này cho thấy sự cải tiến đáng kể của bộ vi xử lý này trong việc xử lý các tác vụ đa luồng như tạo nội dung.\r\nTừ những kết quả trên, chúng ta có thể thấy rằng Intel Core i9 13900K là một bộ vi xử lý có hiệu năng vượt trội và có thể đáp ứng được nhu cầu của hầu hết người dùng.\r\n\r\nTại sao nên chọn CPU Intel Core i9 13900K cho máy tính của bạn?\r\nVới những cải tiến vượt trội về hiệu năng và tính năng mới, Intel Core i9 13900K là một lựa chọn tuyệt vời cho những ai đang tìm kiếm một bộ vi xử lý mạnh mẽ và có thể đáp ứng được nhu cầu của hầu hết người dùng. Nếu bạn là một người chơi game, nhà thiết kế đồ họa hay chỉ đơn giản là một người dùng máy tính thông thường, Intel Core i9 13900K sẽ là sự lựa chọn hoàn hảo cho bạn.\r\n\r\nKết luận\r\nTrong bài viết này, chúng ta đã cùng tìm hiểu về CPU Intel Core i9 13900K - bộ vi xử lý đầu tiên thuộc thế hệ thứ 13 của Intel. Với những cải tiến vượt trội về hiệu năng và tính năng mới, Intel Core i9 13900K hứa hẹn sẽ mang lại trải nghiệm tuyệt vời cho người dùng. Dù có sự ra mắt của thế hệ 14th, Intel Core i9 13900K vẫn là một lựa chọn đáng mua cho máy tính của bạn. Hãy cùng chờ đợi và theo dõi những thông tin mới nhất về bộ vi xử lý này từ Intel.",
+  "price": 13999000,
+  "discount": 12999000,
+  "image": "/uploads/1749051803300_i9_139000K.jpg",
+  "parameters": [
+    {
+      "name": "Socket",
+      "value": "LGA1700",
+      "_id": {
+        "$oid": "6840699be618776e9b8478ed"
+      }
+    },
+    {
+      "name": "Số nhân",
+      "value": "24 nhân (8 P-Core | 16 E-Core)",
+      "_id": {
+        "$oid": "6840699be618776e9b8478ee"
+      }
+    },
+    {
+      "name": "Số luồng",
+      "value": "32 Luồng",
+      "_id": {
+        "$oid": "6840699be618776e9b8478ef"
+      }
+    },
+    {
+      "name": "Bộ nhớ đệm",
+      "value": "36MB",
+      "_id": {
+        "$oid": "6840699be618776e9b8478f0"
+      }
+    }
+  ],
   "createdAt": {
-    "$date": "2025-05-09T15:03:30.998Z"
+    "$date": "2025-06-04T15:43:23.318Z"
   },
   "updatedAt": {
-    "$date": "2025-05-09T15:03:30.998Z"
+    "$date": "2025-06-04T15:43:23.318Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "6828b49967d6c0ee705dd2a6"
+    "$oid": "68406e22e618776e9b84791c"
   },
-  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
-  "nameUnsigned": "CARD MAN HINH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
-  "sku": "1231",
-  "category": "Card (GPU)",
-  "trademark": "ASUS",
-  "content": "CARD MÀN HÌNH ASUS DUAL RTX 4070 SUPER-O12G WHITE",
-  "price": 19220000,
-  "discount": 16500000,
-  "image": "/uploads/1747498137156_DAT_7902.jpg",
+  "name": "BỘ VI XỬ LÝ INTEL CORE I9 14900KF (INTEL LGA1700 - 24 CORE - 32 THREAD - BASE 3.2GHZ - TURBO 6.0GHZ - CACHE 36MB - NO IGPU)",
+  "nameUnsigned": "BO VI XU LY INTEL CORE I9 14900KF (INTEL LGA1700 - 24 CORE - 32 THREAD - BASE 3.2GHZ - TURBO 6.0GHZ - CACHE 36MB - NO IGPU)",
+  "sku": "CPU_I9-14900KF",
+  "category": "CPU",
+  "trademark": "INTEL",
+  "content": "",
+  "price": 16449000,
+  "discount": 15449000,
+  "image": "/uploads/1749052962794_i9_14900K.jpg",
+  "parameters": [
+    {
+      "name": "Số lõi/Số luồng",
+      "value": "24 / 32",
+      "_id": {
+        "$oid": "68406e22e618776e9b84791d"
+      }
+    },
+    {
+      "name": "Số P-core/Số E-core",
+      "value": "8/16",
+      "_id": {
+        "$oid": "68406e22e618776e9b84791e"
+      }
+    },
+    {
+      "name": "Tần số turbo tối đa",
+      "value": "6.0 GHz",
+      "_id": {
+        "$oid": "68406e22e618776e9b84791f"
+      }
+    },
+    {
+      "name": "Tần số cơ sở của P-core",
+      "value": "3.2 GHz (Tần số turbo tối đa của P-core: 5.6 GHz)",
+      "_id": {
+        "$oid": "68406e22e618776e9b847920"
+      }
+    },
+    {
+      "name": "Bộ nhớ đệm",
+      "value": "36 MB Intel® Smart Cache (Tổng bộ nhớ đệm L2: 32 MB)",
+      "_id": {
+        "$oid": "68406e22e618776e9b847921"
+      }
+    },
+    {
+      "name": "Công suất cơ bản của bộ xử lý",
+      "value": "125 W (Công suất turbo Tối đa: 253 W)",
+      "_id": {
+        "$oid": "68406e22e618776e9b847922"
+      }
+    },
+    {
+      "name": "Loại bộ nhớ",
+      "value": "DDR4 và DDR5 tuỳ vào bo mạch chủ",
+      "_id": {
+        "$oid": "68406e22e618776e9b847923"
+      }
+    },
+    {
+      "name": "Hỗ trợ socket",
+      "value": "LGA1700",
+      "_id": {
+        "$oid": "68406e22e618776e9b847924"
+      }
+    },
+    {
+      "name": "Bo mạch đề nghị",
+      "value": "Z790",
+      "_id": {
+        "$oid": "68406e22e618776e9b847925"
+      }
+    }
+  ],
   "createdAt": {
-    "$date": "2025-05-17T16:08:57.164Z"
+    "$date": "2025-06-04T16:02:42.801Z"
   },
   "updatedAt": {
-    "$date": "2025-05-17T16:08:57.164Z"
+    "$date": "2025-06-04T16:02:42.801Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "68295af27650a67797d942da"
+    "$oid": "6840702fe618776e9b84793a"
   },
-  "name": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
-  "nameUnsigned": "CARD MAN HINH ASUS DUAL RTX 4090 SUPER",
-  "sku": "RTX4090SUPER",
-  "category": "Card (GPU)",
-  "trademark": "ASUS",
-  "content": "CARD MÀN HÌNH ASUS DUAL RTX 4090 SUPER",
-  "price": 29000000,
-  "discount": 28990000,
-  "image": "/uploads/1747540722395_wallpaper-4k-hinh-nen-4k-con-duong-rong-va-dai_101306477.jpg",
+  "name": "BỘ VI XỬ LÝ INTEL CORE I7 14700KF (INTEL LGA1700 - 20 CORE - 28 THREAD - BASE 3.4GHZ - TURBO 5.6MHZ - CACHE 33MB - )",
+  "nameUnsigned": "BO VI XU LY INTEL CORE I7 14700KF (INTEL LGA1700 - 20 CORE - 28 THREAD - BASE 3.4GHZ - TURBO 5.6MHZ - CACHE 33MB - )",
+  "sku": "CPU_I7-14700KF",
+  "category": "CPU",
+  "trademark": "INTEL",
+  "content": "",
+  "price": 11799000,
+  "discount": 10799000,
+  "image": "/uploads/1749053487984_i7_14700KF.jpg",
+  "parameters": [
+    {
+      "name": "Số lõi",
+      "value": "20",
+      "_id": {
+        "$oid": "6840702fe618776e9b84793b"
+      }
+    },
+    {
+      "name": "Số luồng",
+      "value": "28",
+      "_id": {
+        "$oid": "6840702fe618776e9b84793c"
+      }
+    },
+    {
+      "name": "Số P-core",
+      "value": "8 ",
+      "_id": {
+        "$oid": "6840702fe618776e9b84793d"
+      }
+    },
+    {
+      "name": "Số E-core",
+      "value": "12",
+      "_id": {
+        "$oid": "6840702fe618776e9b84793e"
+      }
+    },
+    {
+      "name": "Tần số turbo tối đa",
+      "value": "5.6 GHz",
+      "_id": {
+        "$oid": "6840702fe618776e9b84793f"
+      }
+    },
+    {
+      "name": "Tần số cơ sở của P-core",
+      "value": "3.4 GHz",
+      "_id": {
+        "$oid": "6840702fe618776e9b847940"
+      }
+    },
+    {
+      "name": "Công suất cơ bản của bộ xử lý:",
+      "value": "125W",
+      "_id": {
+        "$oid": "6840702fe618776e9b847941"
+      }
+    },
+    {
+      "name": "Hỗ trợ socket",
+      "value": "LGA1700",
+      "_id": {
+        "$oid": "6840702fe618776e9b847942"
+      }
+    },
+    {
+      "name": "Bo mạch đề nghị",
+      "value": "Z690 hoặc Z790",
+      "_id": {
+        "$oid": "6840702fe618776e9b847943"
+      }
+    }
+  ],
   "createdAt": {
-    "$date": "2025-05-18T03:58:42.402Z"
+    "$date": "2025-06-04T16:11:27.992Z"
   },
   "updatedAt": {
-    "$date": "2025-05-18T03:58:42.402Z"
+    "$date": "2025-06-04T16:11:27.992Z"
   },
   "__v": 0
 }]

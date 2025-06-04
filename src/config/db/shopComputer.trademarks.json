@@ -1,112 +1,98 @@
 [{
   "_id": {
-    "$oid": "681349a6193962d7dd5029c6"
+    "$oid": "68405bc2e618776e9b8477c2"
   },
-  "trademark": "ASUS",
-  "image": "/uploads/1746094502838_asus_rog_g14.jpg",
+  "trademark": "INTEL",
+  "image": "/uploads/1749048258792_intel.png",
   "createdAt": {
-    "$date": "2025-05-01T10:15:02.849Z"
+    "$date": "2025-06-04T14:44:18.795Z"
   },
   "updatedAt": {
-    "$date": "2025-05-01T10:15:02.849Z"
+    "$date": "2025-06-04T14:44:18.795Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "681b8183193962d7dd502a0d"
+    "$oid": "6840729f6a56162656362691"
   },
-  "trademark": "MSI",
-  "image": "/uploads/1746633091977_CARDMÃNHÃNHASUSPROARTGEFORCERTX4070TIOC12GBGDDR6X_3.jpg",
+  "trademark": "ACER",
+  "image": "/uploads/1749054111553_ACER.png",
   "createdAt": {
-    "$date": "2025-05-07T15:51:31.979Z"
+    "$date": "2025-06-04T16:21:51.560Z"
   },
   "updatedAt": {
-    "$date": "2025-05-07T15:51:31.979Z"
+    "$date": "2025-06-04T16:21:51.560Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "68295a3d7650a67797d942c1"
+    "$oid": "684072a96a56162656362694"
   },
-  "trademark": "GIGABYTE",
-  "image": "/uploads/1747540541842_aerial-view-of-seashore-near-large-grey-rocks-853199.jpg",
+  "trademark": "AMD",
+  "image": "/uploads/1749054121479_AMD.png",
   "createdAt": {
-    "$date": "2025-05-18T03:55:41.844Z"
+    "$date": "2025-06-04T16:22:01.481Z"
   },
   "updatedAt": {
-    "$date": "2025-05-18T03:55:41.844Z"
+    "$date": "2025-06-04T16:22:01.481Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "68295a467650a67797d942c4"
+    "$oid": "684072b76a56162656362697"
   },
-  "trademark": "Acer",
-  "image": "/uploads/1747540550987_gray-bridge-and-trees-814499.jpg",
+  "trademark": "ASROCK",
+  "image": "/uploads/1749054135049_ASROCK.png",
   "createdAt": {
-    "$date": "2025-05-18T03:55:50.988Z"
+    "$date": "2025-06-04T16:22:15.051Z"
   },
   "updatedAt": {
-    "$date": "2025-05-18T03:55:50.988Z"
+    "$date": "2025-06-04T16:22:15.051Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "68295a517650a67797d942c7"
-  },
-  "trademark": "Lenovol",
-  "image": "/uploads/1747540561350_crimea_swallows_nest_sea_84567_3840x2400.jpg",
-  "createdAt": {
-    "$date": "2025-05-18T03:56:01.350Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-18T03:56:01.350Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68295a667650a67797d942ca"
-  },
-  "trademark": "HP",
-  "image": "/uploads/1747540582647_clouds-daylight-forest-grass-371589.jpg",
-  "createdAt": {
-    "$date": "2025-05-18T03:56:22.648Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-18T03:56:22.648Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68295a707650a67797d942cd"
-  },
-  "trademark": "SAMSUNG",
-  "image": "/uploads/1747540592386_building-with-tree-1534057.jpg",
-  "createdAt": {
-    "$date": "2025-05-18T03:56:32.387Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-18T03:56:32.387Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68295a817650a67797d942d0"
+    "$oid": "684072bd6a5616265636269a"
   },
   "trademark": "DELL",
-  "image": "/uploads/1747540609448_bird-s-eye-view-of-seashore-during-daytime-2213443.jpg",
+  "image": "/uploads/1749054141253_DELL.jpg",
   "createdAt": {
-    "$date": "2025-05-18T03:56:49.464Z"
+    "$date": "2025-06-04T16:22:21.255Z"
   },
   "updatedAt": {
-    "$date": "2025-05-18T03:56:49.464Z"
+    "$date": "2025-06-04T16:22:21.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684072c36a5616265636269d"
+  },
+  "trademark": "HP",
+  "image": "/uploads/1749054147826_HP.png",
+  "createdAt": {
+    "$date": "2025-06-04T16:22:27.828Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T16:22:27.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684072d36a561626563626a0"
+  },
+  "trademark": "XIGMATEK",
+  "image": "/uploads/1749054163868_XIGMATEK.jpg",
+  "createdAt": {
+    "$date": "2025-06-04T16:22:43.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T16:22:43.869Z"
   },
   "__v": 0
 }]
