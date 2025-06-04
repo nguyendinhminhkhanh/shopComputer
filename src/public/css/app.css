@@ -1,12 +1,14 @@
 html {
   font-size: 62.5%; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
 body {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1a2b5f;
   line-height: 1.4;
   font-weight: 400;
@@ -389,7 +391,8 @@ img {
   overflow: hidden;
   text-overflow: ellipsis; }
   .text-clamp--2 {
-    -webkit-line-clamp: 2; }
+    -webkit-line-clamp: 2;
+    line-clamp: 2; }
 
 .partner {
   margin-bottom: 19rem; }
