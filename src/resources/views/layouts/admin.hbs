@@ -31,11 +31,23 @@
         .sidebar .nav-link.active {
             background-color: #495057;
         }
+
+        .text-clamp {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .text-clamp--2 {
+            -webkit-line-clamp: 3;
+            line-clamp: 2;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid" style="padding-bottom: 3rem;">
+    <div class="container-fluid" style="padding-bottom: 3r;">
         <div class="row">
             <!-- Sidebar -->
             {{>sidebar}}
