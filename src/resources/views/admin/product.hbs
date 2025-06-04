@@ -63,10 +63,10 @@
                 <tr>
                     <td>{{sum @index 1}}</td>
                     <td><abbr style="text-decoration: none;" title="{{this.createdAt}}">{{this.sku}}</abbr></td>
-                    <td>{{this.name}}</td>
+                    <td class="text-clamp text-clamp--2">{{this.name}}</td>
                     <td>{{this.category}}</td>
                     <td>{{this.trademark}}</td>
-                    <td>{{this.content}}</td>
+                    <td class="text-clamp text-clamp--2">{{this.content}}</td>
                     <td>{{this.price}}</td>
                     <td>{{this.discount}}</td>
                     {{!-- <td>{{this.image}}</td> --}}
@@ -75,11 +75,6 @@
                         <form method="GET" action="/admin/product/edit-product/{{this._id}}">
                             <button type="submit" class="btn btn-warning btn-sm">Sửa</button>
                         </form>
-                        {{!-- <button type="button" class="btn btn-warning btn-sm btn-edit"
-                            data-id="{{this._id}}">Sửa</button> --}}
-
-                        {{!-- <a href="/admin/product/edit/{{this._id}}" class="btn btn-warning btn-sm">Sửa</a> --}}
-
                         <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="{{this._id}}"
                             data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">
                             Xóa
