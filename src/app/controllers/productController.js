@@ -90,8 +90,7 @@ class productController {
         ...req.body,
         nameUnsigned: removeVietnameseTones(req.body.name),
         image: imagePath,
-        parameters:
-          parameters.length > 0 ? parameters : undefined,
+        parameters: parameters.length > 0 ? parameters : undefined,
       });
 
       await product.save();
@@ -153,12 +152,14 @@ class productController {
   }
 
   //Sửa sản phẩm
-  edit(req, res, next) {
+  async edit(req, res, next) {
+    const trademarks = await Trademark.find().lean();
     Product.findById(req.params.id)
       .then((product) => {
         res.render("admin/edit-product", {
           layout: "admin",
           product: mongooseToObject(product),
+          trademarks,
           query: req.query,
           currentPath: req.path,
         });
