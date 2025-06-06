@@ -40,11 +40,10 @@
                 <div class="form-group">
                     <label for="trademark">Hãng: </label>
                     <select class="form-control" id="trademark" name="trademark">
-                        <option value="Asus" {{#if (eq product.trademark "Asus" )}}selected{{/if}}>Asus</option>
-                        <option value="Lenovol" {{#if (eq product.trademark "Lenovol" )}}selected{{/if}}>Lenovol
-                        </option>
-                        <option value="Dell" {{#if (eq product.trademark "Dell" )}}selected{{/if}}>Dell</option>
-                        <option value="HP" {{#if (eq product.trademark "HP" )}}selected{{/if}}>HP</option>
+                        <option value="{{product.trademark}}">Hãng hiện tại -- {{product.trademark}}</option>
+                        {{#each trademarks}}
+                        <option value="{{this.trademark}}">{{this.trademark}}</option>
+                        {{/each}}
                     </select>
                 </div>
 
