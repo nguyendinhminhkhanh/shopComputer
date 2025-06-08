@@ -209,22 +209,11 @@
         <h2 class="connect__title">For kids who enjoy themeselves</h2>
         <p class="connect__notice">Connect with us <span>@playground</span></p>
         <ul class="connect__list">
+            {{#each trademarks}}
             <li class="connect__item">
-                <img src="https://cdn.dribbble.com/users/648922/screenshots/15392254/media/2c3020f499cbf5ab2a0e215ee55741ed.png"
-                    alt="" class="connect__image">
+                <img src="{{this.image}}" alt="" class="connect__image">
             </li>
-            <li class="connect__item">
-                <img src="https://cdn.dribbble.com/users/648922/screenshots/11206395/media/5998f56329eda70b71fecd050032bc21.png"
-                    alt="" class="connect__image">
-            </li>
-            <li class="connect__item">
-                <img src="https://cdn.dribbble.com/users/648922/screenshots/14120767/media/4dec967491175dcf45e70ae6015a4060.png"
-                    alt="" class="connect__image">
-            </li>
-            <li class="connect__item">
-                <img src="https://cdn.dribbble.com/users/648922/screenshots/15392254/media/ab29bf966e97edefce45f4727aa13430.png"
-                    alt="" class="connect__image">
-            </li>
+            {{/each}}
         </ul>
     </div>
 </section>
