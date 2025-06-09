@@ -64,7 +64,7 @@
 <section class="category">
     <div class="container">
         <div class="">
-            <h1 class="title" style="font-weight: 600;">Sản phẩm mới</h1>
+            <h1 class="title" style="font-weight: 600;">SẢN PHẨM MỚI</h1>
         </div>
         <ul class="category__list">
             {{#each products}}
@@ -182,6 +182,170 @@
         </div>
     </div>
 </section>
+
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">CPU INTEL - BỘ VI XỬ LÝ</h1>
+        </div>
+        <ul class="category__list">
+            {{#each CPU}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">MAINBOARD - BO MẠCH CHỦ</h1>
+        </div>
+        <ul class="category__list">
+            {{#each mainboard}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">RAM - BỘ NHỚ TRONG</h1>
+        </div>
+        <ul class="category__list">
+            {{#each RAM}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">VGA - CARD MÀN HÌNH</h1>
+        </div>
+        <ul class="category__list">
+            {{#each GPU}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">SSD - Ổ CỨNG SSD</h1>
+        </div>
+        <ul class="category__list">
+            {{#each SSD}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-weight: 600;">PSU - NGUỒN MÁY TÍNH</h1>
+        </div>
+        <ul class="category__list">
+            {{#each PSU}}
+            <li class="category__item">
+                <img src="{{this.image}}" alt="" class="category__image">
+                <a href="/product/detail/{{this._id}}">
+                    <h3 type="submit" class="category__name text-clamp text-clamp--2">{{this.name}}</h3>
+                </a>
+                <div>
+                    <div class="pt-3">
+                        <del class="d-flex justify-content-end"
+                            style="font-size: 2rem; opacity: 0.4; color: red;">{{this.price}} VND</del>
+                        <p style="font-size: 2rem; color: green;">{{this.discount}} VND</p>
+                    </div>
+                </div>
+                <a href="#" class="category__details">
+                    {{this.sku}} <i class='bx bxs-chevrons-right'></i>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+
 <section class="partner">
     <div class="container partner__container">
         <h2 class="partner__title">Our business partners</h2>
@@ -206,8 +370,8 @@
 </section>
 <section class="connect">
     <div class="container">
-        <h2 class="connect__title">For kids who enjoy themeselves</h2>
-        <p class="connect__notice">Connect with us <span>@playground</span></p>
+        {{!-- <h2 class="connect__title">Các thương hiệu bán chạy nhất</h2> --}}
+        {{!-- <p class="connect__notice">Connect with us <span>@playground</span></p> --}}
         <ul class="connect__list">
             {{#each trademarks}}
             <li class="connect__item">
