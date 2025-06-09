@@ -41,7 +41,7 @@
   "_id": {
     "$oid": "681349ba193962d7dd5029d3"
   },
-  "category": "Card (GPU)",
+  "category": "GPU",
   "createdAt": {
     "$date": "2025-05-01T10:15:22.997Z"
   },
@@ -54,7 +54,7 @@
   "_id": {
     "$oid": "681349eb193962d7dd5029d6"
   },
-  "category": "Ổ cứng",
+  "category": "SSD",
   "createdAt": {
     "$date": "2025-05-01T10:16:11.257Z"
   },
@@ -67,7 +67,7 @@
   "_id": {
     "$oid": "681349f0193962d7dd5029d9"
   },
-  "category": "Nguồn (PSU)",
+  "category": "PSU",
   "createdAt": {
     "$date": "2025-05-01T10:16:16.687Z"
   },

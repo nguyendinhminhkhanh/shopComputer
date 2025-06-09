@@ -95,4 +95,102 @@
     "$date": "2025-06-04T16:22:43.869Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6843056b5591ab90fc2a9991"
+  },
+  "trademark": "GIGABYTE",
+  "image": "/uploads/1749222763483_gigabyte.png",
+  "createdAt": {
+    "$date": "2025-06-06T15:12:43.491Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T15:12:43.491Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684307905591ab90fc2a99ab"
+  },
+  "trademark": "ASUS",
+  "image": "/uploads/1749223312995_Asus.jpg",
+  "createdAt": {
+    "$date": "2025-06-06T15:21:52.997Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T15:21:52.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846eb65c71e8991f87ddc4a"
+  },
+  "trademark": "SAMSUNG",
+  "image": "/uploads/1749478245278_Samsung.png",
+  "createdAt": {
+    "$date": "2025-06-09T14:10:45.285Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T14:10:45.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846ec86c71e8991f87ddcc3"
+  },
+  "trademark": "KINGMAX",
+  "image": "/uploads/1749478534400_Kingmax.png",
+  "createdAt": {
+    "$date": "2025-06-09T14:15:34.401Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T14:15:34.401Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846ed03c71e8991f87ddcc6"
+  },
+  "trademark": "CORSAIR",
+  "image": "/uploads/1749478659967_Corsair-logo.png",
+  "createdAt": {
+    "$date": "2025-06-09T14:17:39.970Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T14:17:39.970Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846eed551700ed11f36b3bb"
+  },
+  "trademark": "PNY",
+  "image": "/uploads/1749479125281_PNY.png",
+  "createdAt": {
+    "$date": "2025-06-09T14:25:25.289Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T14:25:25.289Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6846ef7451700ed11f36b3c5"
+  },
+  "trademark": "LEXAR",
+  "image": "/uploads/1749479284097_Lexar.svg.png",
+  "createdAt": {
+    "$date": "2025-06-09T14:28:04.098Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T14:28:04.098Z"
+  },
+  "__v": 0
 }]
