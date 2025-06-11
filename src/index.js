@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 db.connect();
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Đổi thành URL frontend của bạn
+  origin: 'http://localhost:3000', 
   credentials: true, // Cho phép gửi cookie
 }));
 
